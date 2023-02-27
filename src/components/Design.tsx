@@ -24,12 +24,8 @@ export const Design = () => {
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          background: {
-            color: {
-              value: '#0d47a1',
-            },
-          },
-          fpsLimit: 120,
+          background: {},
+          fpsLimit: 60,
           interactivity: {
             events: {
               onClick: {
@@ -73,7 +69,7 @@ export const Design = () => {
                 default: 'bounce',
               },
               random: false,
-              speed: 6,
+              speed: 1,
               straight: false,
             },
             number: {
@@ -84,7 +80,7 @@ export const Design = () => {
               value: 80,
             },
             opacity: {
-              value: 0.5,
+              value: 0.2,
             },
             shape: {
               type: 'circle',

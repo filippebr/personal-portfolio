@@ -1,5 +1,5 @@
 import React from 'react'
-import { HiChevronDoubleRight } from 'react-icons/hi'
+import AboutList from './AboutList'
 
 function AboutMe() {
   return (
@@ -7,7 +7,7 @@ function AboutMe() {
       id="about"
       className="w-full h-full bg-black text-white py-28 px-4"
     >
-      <div className="max-w-6xl mx-auto flex flex-col gap-6 md:gap-16">
+      <div className="max-w-5xl mx-auto flex flex-col gap-6 md:gap-16">
         <h1 className="text-3xl uppercase font-semibold text-center">
           A Story about me.
         </h1>
@@ -25,13 +25,17 @@ function AboutMe() {
           dolore vitae amet assumenda a quisquam! Voluptate dignissimos unde
           deleniti optio aperiam?
         </p>
-        <div>
-          <h4 className="text-2xl font-semibold flex items-center gap-4">
-            <span className="text-designColor">
-              <HiChevronDoubleRight />
-            </span>
-            Web Design
-          </h4>
+        <div className="w-[700px] grid grid-cols-1 md:grid-cols-2 gap-8">
+          <AboutList title="Web Design" />
+          <AboutList title="HTML" />
+          <AboutList title="CSS" />
+          <AboutList title="JavaScript" />
+          <AboutList title="React" />
+          <AboutList title="Nextjs" />
+          <AboutList title="Prisma" />
+          <AboutList title="SQL" />
+          <AboutList title="Tailwind" />
+          <AboutList title="Blender" />
         </div>
       </div>
     </section>

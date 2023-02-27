@@ -1,4 +1,4 @@
-import { Design } from './Design'
+import Design from './Design'
 import { HiMinus } from 'react-icons/hi'
 
 function Banner() {

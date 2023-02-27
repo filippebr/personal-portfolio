@@ -1,7 +1,7 @@
 import AboutMe from '@/components/AboutMe'
 import Banner from '@/components/Banner'
 
-export default function Home() {
+function Home() {
   return (
     <>
       <div className="font-bodyFont">
@@ -11,3 +11,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home

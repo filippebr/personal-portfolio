@@ -5,7 +5,7 @@ import type { Container, Engine } from 'tsparticles-engine'
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
 
-export const Design = () => {
+function Design() {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine)
   }, [])
@@ -95,3 +95,5 @@ export const Design = () => {
     </div>
   )
 }
+
+export default Design

@@ -1,3 +1,4 @@
+import AboutMe from '@/components/AboutMe'
 import Banner from '@/components/Banner'
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <>
       <div className="font-bodyFont">
         <Banner />
+        <AboutMe />
       </div>
     </>
   )

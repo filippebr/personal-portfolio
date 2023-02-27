@@ -1,4 +1,5 @@
 import { Design } from './Design'
+import { HiMinus } from 'react-icons/hi'
 
 function Banner() {
   return (
@@ -19,6 +20,13 @@ function Banner() {
           <h1 className="text-[50px] md:text-[80px] lg:text-[100px] font-black">
             I&apos;m Filippe Braga
           </h1>
+          <div className="flex items-center gap-2 md:gap-6 text-base md:text-xl font-bold bg-designColor px-6 py-3 uppercase">
+            <h2 className="tracking-[4px]">Programmer</h2>
+            <HiMinus className="text-2xl rotate-90" />
+            <h2 className="tracking-[4px]">Designer</h2>
+            <HiMinus className="text-2xl rotate-90" />
+            <h2 className="tracking-[4px]">3D Creator</h2>
+          </div>
         </div>
       </div>
     </section>

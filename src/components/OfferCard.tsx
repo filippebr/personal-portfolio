@@ -6,9 +6,13 @@ type Props = {
   subTitle: string
 }
 
-function OfferCard({ Icon, title, subTitle }: Props): React.ReactElement {
+function OfferCard({
+  Icon,
+  title,
+  subTitle,
+}: Props): React.ReactElement<Props> {
   return (
-    <div>
+    <div className="w-full shadow-cardShadow flex flex-col items-center justify-center gap-10 py-16">
       {Icon && <Icon className="text-designColor text-7xl" />}
       <h1 className="text-2xl font-semibold text-gray-100 uppercase tracking-[10px]">
         {title}

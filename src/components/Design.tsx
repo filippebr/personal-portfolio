@@ -24,12 +24,16 @@ function Design() {
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          background: {},
+          background: {
+            color: {
+              value: ' ',
+            },
+          },
           fpsLimit: 60,
           interactivity: {
             events: {
               onClick: {
-                enable: true,
+                enable: false,
                 mode: 'push',
               },
               onHover: {

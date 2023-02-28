@@ -1,6 +1,7 @@
 import AboutMe from '@/components/AboutMe'
 import Banner from '@/components/Banner'
 import Offers from '@/components/Offers'
+import Works from '@/components/Works'
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
         <Banner />
         <AboutMe />
         <Offers />
+        <Works />
       </div>
     </>
   )

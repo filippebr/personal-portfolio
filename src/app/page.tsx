@@ -1,10 +1,11 @@
+import 'slick-carousel/slick/slick.css'
 import AboutMe from '@/components/AboutMe'
 import Banner from '@/components/Banner'
 import Offers from '@/components/Offers'
 import Testimonial from '@/components/Testimonial'
 import Works from '@/components/Works'
 
-function Home() {
+const Home = () => {
   return (
     <>
       <div className="font-bodyFont">

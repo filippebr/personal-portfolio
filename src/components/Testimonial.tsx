@@ -11,10 +11,10 @@ function Testimonial() {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    beforeChange: (prev: any, next: any) => {
+    beforeChange: (prev: number, next: number) => {
       setDocActive(next)
     },
-    appendDots: (dots: any) => (
+    appendDots: (dots: boolean) => (
       <div
         style={{
           position: 'absolute',
@@ -36,7 +36,7 @@ function Testimonial() {
         </ul>
       </div>
     ),
-    customPaging: (i: any) => (
+    customPaging: (i: number) => (
       <div
         style={
           i === dotActive
@@ -68,7 +68,7 @@ function Testimonial() {
           <Slider {...settings}>
             <div>
               <p className="text-xl text-textColor text-center leading-8">
-                <span className="text-white">Apple company CEO -</span>
+                <span className="text-white">Apple company CEO - </span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
                 impedit eaque id fuga odit dolorum eligendi, vel repellendus
                 voluptate laudantium sed culpa illo debitis repellat facilis
@@ -81,7 +81,7 @@ function Testimonial() {
             </div>
             <div>
               <p className="text-xl text-textColor text-center leading-8">
-                <span className="text-white">Apple company CEO -</span>
+                <span className="text-white">Apple company CEO - </span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
                 impedit eaque id fuga odit dolorum eligendi, vel repellendus
                 voluptate laudantium sed culpa illo debitis repellat facilis
@@ -94,7 +94,7 @@ function Testimonial() {
             </div>
             <div>
               <p className="text-xl text-textColor text-center leading-8">
-                <span className="text-white">Apple company CEO -</span>
+                <span className="text-white">Apple company CEO - </span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
                 impedit eaque id fuga odit dolorum eligendi, vel repellendus
                 voluptate laudantium sed culpa illo debitis repellat facilis

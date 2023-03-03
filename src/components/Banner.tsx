@@ -3,9 +3,9 @@ import { HiMinus } from 'react-icons/hi'
 
 function Banner() {
   return (
-    <section id="home" className="w-full h-[700px] relative text-white">
+    <section id="home" className="w-full h-[725px] relative text-white">
       <Design />
-      <div className="absolute left-0 top-0 w-full h-[700px] bg-black bg-opacity-10 ">
+      <div className="absolute left-0 top-0 w-full h-[725px] bg-black bg-opacity-10 ">
         <nav className="w-full px-16 py-6 flex justify-between fixed top-0 z-40 bg-black bg-opacity-25">
           <h1 className="font-bodyFont text-4xl text-white font-extrabold border-2 w-12 text-center">
             S

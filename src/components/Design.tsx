@@ -12,21 +12,32 @@ function Design() {
 
   const particlesLoaded = useCallback(
     async (container: Container | undefined) => {
-      //await console.log(container);
+      await console.log(container)
     },
     [],
   )
 
   return (
-    <div className="w-full h-full bg-hero-image bg-cover">
+    <div
+      id="tsparticles-custom"
+      className="w-full h-full bg-hero-image bg-cover"
+    >
       <Particles
+        style={{
+          height: '100vh',
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          margin: 0,
+          padding: 0,
+        }}
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
           background: {
             color: {
-              value: ' ',
+              value: '',
             },
           },
           fpsLimit: 60,
@@ -52,6 +63,7 @@ function Design() {
               },
             },
           },
+          fullScreen: { enable: false, zIndex: 0 },
           particles: {
             color: {
               value: '#ffffff',

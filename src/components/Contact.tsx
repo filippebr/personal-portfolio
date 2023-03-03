@@ -22,6 +22,11 @@ function Contact() {
               <p className="text-sm tracking-wide">filippeffx@hotmail.com</p>
             </div>
           </div>
+          <form>
+            <div>
+              <input type="text" />
+            </div>
+          </form>
         </div>
       </div>
     </div>

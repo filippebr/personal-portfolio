@@ -41,8 +41,22 @@ function Contact() {
               placeholder="Your Messages"
             ></textarea>
 
-            <button>Submit Now</button>
+            <button className="w-44 h-12 bg-designColor text-base uppercase font-bold tracking-wide border-2 border-transparent hover:bg-black hover:border-designColor duration-300">
+              Submit Now
+            </button>
           </form>
+          <div className="w-full py-10 bg-black bg-opacity-40 flex flex-col md:flex-row px-4 md:items-center justify-between">
+            <div className="text-lg font-thin">
+              <p>For project enquires</p>
+              <p>
+                or say `Hello` -{' '}
+                <span className="font-semibold text-designColor">
+                  webdevfibr@protonmail.com
+                </span>
+              </p>
+            </div>
+            <p>© 2023 webdevfibr All rights reserved.</p>
+          </div>
         </div>
       </div>
     </div>

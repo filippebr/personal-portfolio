@@ -2,8 +2,8 @@ import { FaMap, FaPhoneAlt, FaEnvelope } from 'react-icons/fa'
 
 function Contact() {
   return (
-    <div className="w-full h-[800px] bg-contact-image bg-no-repeat bg-cover bg-fixed text-white px-4 relative">
-      <div className="w-full h-full bg-black bg-opacity-80 py-20">
+    <div className="w-full h-[800px] bg-contact-image bg-no-repeat bg-cover bg-fixed text-white px-0 relative">
+      <div className="w-full h-full bg-black bg-opacity-80 px-5 py-20">
         <div className="max-w-6xl h-full mx-auto flex flex-col gap-6 md:gap-12">
           <h1 className="text-3xl font-thin tracking-widest uppercase text-center">
             Say Hello!

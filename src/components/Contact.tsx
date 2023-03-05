@@ -1,6 +1,28 @@
+'use client'
+import { FormEvent, useState } from 'react'
 import { FaMap, FaPhoneAlt, FaEnvelope } from 'react-icons/fa'
 
 function Contact() {
+  const [username, setUsername] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [errMsg, setErrMsg] = useState('')
+  const [successMsg, setSuccessMsg] = useState('')
+
+  const handleSubmit = (e: FormEvent<HTMLButtonElement>) => {
+    e.preventDefault()
+    if (username === '') {
+      setErrMsg('Enter your Name')
+    } else if (email === '') {
+      setErrMsg('Enter your Emails')
+    } else if (message === '') {
+      setErrMsg('Enter your Messages')
+    } else {
+      setSuccessMsg(
+        `Hello dear ${username}, thank you for your Messages. Additional Information will send to you shortly via your email at ${email}`,
+      )
+    }
+  }
   return (
     <div className="w-full h-[800px] bg-contact-image bg-no-repeat bg-cover bg-fixed text-white px-0 relative">
       <div className="w-full h-full bg-black bg-opacity-90 px-5 py-20">
@@ -25,6 +47,7 @@ function Contact() {
           <form className="w-full flex flex-col items-center gap-4 md:gap-10">
             <div className="w-full flex flex-col md:flex-row items-center gap-4 md:gap-10">
               <input
+                onChange={(e) => setUsername(e.target.value)}
                 placeholder="Name"
                 className="w-full md:w-1/2 py-2 px-4 text-base text-black placeholder:text-gray-600 font-bold placeholder:font-normal outline-none border-transparent border-2 focus-within:border-designColor duration-200"
                 type="text"
@@ -37,11 +60,15 @@ function Contact() {
             </div>
 
             <textarea
+              onChange={(e) => setMessage(e.target.value)}
               className="w-full text-lg h-36 p-4 text-black placeholder:text-gray-600 font-bold placeholder:font-normal outline-none border-transparent border-2 focus-within:border-designColor duration-200 resize-none"
               placeholder="Your Messages"
             ></textarea>
-
-            <button className="w-44 h-12 bg-designColor text-base uppercase font-bold tracking-wide border-2 border-transparent hover:bg-black hover:border-designColor duration-300">
+            {errMsg && <p>{errMsg}</p>}
+            <button
+              onClick={handleSubmit}
+              className="w-44 h-12 bg-designColor text-base uppercase font-bold tracking-wide border-2 border-transparent hover:bg-black hover:border-designColor duration-300"
+            >
               Submit Now
             </button>
           </form>

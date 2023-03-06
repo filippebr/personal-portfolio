@@ -3,9 +3,15 @@
 import Design from './Design'
 import { Link } from 'react-scroll'
 import { HiMinus } from 'react-icons/hi'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 function Banner() {
+  const ref = useRef<string | any>('')
+  function handleClick(e: any) {
+    if (e.target.contains(ref.current)) {
+      setMenu(false)
+    }
+  }
   const [menu, setMenu] = useState(false)
   return (
     <section id="home" className="w-full h-[800px] relative text-white">
@@ -38,7 +44,11 @@ function Banner() {
         </div>
       </div>
       {menu && (
-        <div className="w-full h-screen bg-black bg-opacity-40 fixed top-0 right-0 flex justify-end z-50">
+        <div
+          ref={(node) => (ref.current = node)}
+          onClick={handleClick}
+          className="w-full h-screen bg-black bg-opacity-40 fixed top-0 right-0 flex justify-end z-50"
+        >
           <div className="w-full md:w-[60%] lg:w-[40%] h-full bg-[#0F1113] text-white flex items-center justify-center">
             <div className="w-4/5 px-12">
               <div>
@@ -79,19 +89,6 @@ function Banner() {
                   >
                     <li className="text-xl font-semibold text-gray-300 hover:text-white duration-300 cursor-pointer">
                       Portfolio
-                    </li>
-                  </Link>
-
-                  <Link
-                    to="works"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    onClick={() => setMenu(false)}
-                  >
-                    <li className="text-xl font-semibold text-gray-300 hover:text-white duration-300 cursor-pointer">
-                      Works
                     </li>
                   </Link>
 

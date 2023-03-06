@@ -93,7 +93,7 @@ function Contact() {
             <div className="text-lg font-thin">
               <p>For project enquires</p>
               <p>
-                or say `Hello` -{' '}
+                or say Hello -{' '}
                 <span className="font-semibold text-designColor">
                   webdevfibr@protonmail.com
                 </span>

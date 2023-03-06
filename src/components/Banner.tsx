@@ -1,7 +1,11 @@
+'use client'
+
 import Design from './Design'
 import { HiMinus } from 'react-icons/hi'
+import { useState } from 'react'
 
 function Banner() {
+  const [menu, setMenu] = useState(false)
   return (
     <section id="home" className="w-full h-[800px] relative text-white">
       <Design />
@@ -10,7 +14,10 @@ function Banner() {
           <h1 className="font-bodyFont text-4xl text-white font-extrabold border-2 w-12 text-center">
             S
           </h1>
-          <div className="w-8 h-6 group flex flex-col items-center justify-between cursor-pointer">
+          <div
+            onClick={() => setMenu(true)}
+            className="w-8 h-6 group flex flex-col items-center justify-between cursor-pointer"
+          >
             <span className="w-full h-[3px] bg-designColor inline-flex group-hover:w-4 duration-300"></span>
             <span className="w-full h-[3px] bg-designColor inline-flex"></span>
             <span className="w-full h-[3px] bg-designColor inline-flex group-hover:w-4 duration-300"></span>
@@ -29,6 +36,53 @@ function Banner() {
           </div>
         </div>
       </div>
+      {menu && (
+        <div className="w-full h-screen bg-black bg-opacity-40 fixed top-0 right-0 flex justify-end z-50">
+          <div className="w-full md:w-[60%] lg:w-[40%] h-full bg-[#0F1113] text-white flex items-center justify-center">
+            <div className="w-4/5 px-12">
+              <div>
+                <ul className="flex flex-col gap-2">
+                  <li className="text-xl font-semibold text-gray-300 hover:text-white duration-300 cursor-pointer">
+                    Home
+                  </li>
+                  <li className="text-xl font-semibold text-gray-300 hover:text-white duration-300 cursor-pointer">
+                    About
+                  </li>
+                  <li className="text-xl font-semibold text-gray-300 hover:text-white duration-300 cursor-pointer">
+                    Portfolio
+                  </li>
+                  <li className="text-xl font-semibold text-gray-300 hover:text-white duration-300 cursor-pointer">
+                    Works
+                  </li>
+                  <li className="text-xl font-semibold text-gray-300 hover:text-white duration-300 cursor-pointer">
+                    Testimonial
+                  </li>
+                  <li className="text-xl font-semibold text-gray-300 hover:text-white duration-300 cursor-pointer">
+                    Contact
+                  </li>
+                </ul>
+              </div>
+              <div className="text-lg font-thin mt-32">
+                <p>For project enqueries</p>
+                <p>
+                  or say &lsquo;Hello&lsquo; -{' '}
+                  <span className="font-semibold text-designColor">
+                    webdevfibr@protonmail.com
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div className="w-1/5 h-full border-1-[1px] text-center flex items-center justify-center">
+              <button
+                onClick={() => setMenu(false)}
+                className="text-3xl font-black text-designColor"
+              >
+                X
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   )
 }

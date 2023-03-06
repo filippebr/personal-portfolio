@@ -1,5 +1,6 @@
 'use client'
 import { FormEvent, useState } from 'react'
+import { motion } from 'framer-motion'
 import { FaMap, FaPhoneAlt, FaEnvelope } from 'react-icons/fa'
 
 function Contact() {
@@ -41,13 +42,18 @@ function Contact() {
             </div>
             <div className="flex flex-col items-center gap-3">
               <FaEnvelope className="text-4xl text-designColor" />
-              <p className="text-sm tracking-wide">filippeffx@hotmail.com</p>
+              <p className="text-sm tracking-wide">webdevfibr@protonmail.com</p>
             </div>
           </div>
           {successMsg ? (
-            <p className="max-w-[600px] h-full flex justify-center items-center mx-auto text-lg font-semibold px-4">
+            <motion.p
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, type: 'easeIn' }}
+              className="max-w-[600px] h-full flex justify-center items-center mx-auto text-lg font-semibold px-4"
+            >
               {successMsg}
-            </p>
+            </motion.p>
           ) : (
             <form className="w-full flex flex-col items-center gap-4 md:gap-10">
               <div className="w-full flex flex-col md:flex-row items-center gap-4 md:gap-10">

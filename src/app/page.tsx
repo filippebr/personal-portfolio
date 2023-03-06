@@ -5,6 +5,7 @@ import Offers from '@/components/Offers'
 import Testimonial from '@/components/Testimonial'
 import Works from '@/components/Works'
 import Contact from '@/components/Contact'
+import ScrollBtn from '@/components/ScrollBtn'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Testimonial />
         <Contact />
       </div>
+      <ScrollBtn />
     </>
   )
 }

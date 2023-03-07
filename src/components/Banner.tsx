@@ -2,16 +2,19 @@
 
 import Design from './Design'
 import { HiMinus } from 'react-icons/hi'
-import { useEffect, useRef, useState } from 'react'
+import { MouseEvent, useEffect, useRef, useState } from 'react'
 import ScrollLink from './ScrollLink'
 
 function Banner() {
-  const ref = useRef<string | any>('')
-  const [navColor, setnavColor] = useState('transparent')
-  const [menu, setMenu] = useState(false)
+  const ref = useRef<HTMLDivElement | null>(null)
+  const [navColor, setnavColor] = useState<string>('transparent')
+  const [menu, setMenu] = useState<boolean>(false)
 
-  function handleClick(e: any) {
-    if (e.target.contains(ref.current)) {
+  function handleClick(event: MouseEvent<HTMLDivElement>): void {
+    if (
+      event.target instanceof Element &&
+      ref.current?.contains(event.target)
+    ) {
       setMenu(false)
     }
   }

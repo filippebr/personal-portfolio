@@ -16,14 +16,14 @@ function Banner() {
     }
   }
 
-  const listendScrollEvent = () => {
+  const listenedScrollEvent = () => {
     window.scrollY > 10 ? setnavColor('#000') : setnavColor('transparent')
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', listendScrollEvent)
+    window.addEventListener('scroll', listenedScrollEvent)
     return () => {
-      window.removeEventListener('scroll', listendScrollEvent)
+      window.removeEventListener('scroll', listenedScrollEvent)
     }
   }, [])
 

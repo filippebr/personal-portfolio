@@ -1,18 +1,20 @@
 'use client'
 
 import Design from './Design'
-import { Link } from 'react-scroll'
 import { HiMinus } from 'react-icons/hi'
 import { useEffect, useRef, useState } from 'react'
+import ScrollLink from './ScrollLink'
 
 function Banner() {
   const ref = useRef<string | any>('')
+  const [navColor, setnavColor] = useState('transparent')
+  const [menu, setMenu] = useState(false)
+
   function handleClick(e: any) {
     if (e.target.contains(ref.current)) {
       setMenu(false)
     }
   }
-  const [navColor, setnavColor] = useState('transparent')
 
   const listendScrollEvent = () => {
     window.scrollY > 10 ? setnavColor('#000') : setnavColor('transparent')
@@ -25,7 +27,6 @@ function Banner() {
     }
   }, [])
 
-  const [menu, setMenu] = useState(false)
   return (
     <section id="home" className="w-full h-[800px] relative text-white">
       <Design />
@@ -72,70 +73,11 @@ function Banner() {
             <div className="w-4/5 px-12">
               <div>
                 <ul className="flex flex-col gap-2">
-                  <Link
-                    to="home"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    onClick={() => setMenu(false)}
-                  >
-                    <li className="text-xl font-semibold text-gray-300 hover:text-white duration-300 cursor-pointer">
-                      Home
-                    </li>
-                  </Link>
-
-                  <Link
-                    to="about"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    onClick={() => setMenu(false)}
-                  >
-                    <li className="text-xl font-semibold text-gray-300 hover:text-white duration-300 cursor-pointer">
-                      About
-                    </li>
-                  </Link>
-
-                  <Link
-                    to="portfolio"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    onClick={() => setMenu(false)}
-                  >
-                    <li className="text-xl font-semibold text-gray-300 hover:text-white duration-300 cursor-pointer">
-                      Portfolio
-                    </li>
-                  </Link>
-
-                  <Link
-                    to="testimonial"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    onClick={() => setMenu(false)}
-                  >
-                    <li className="text-xl font-semibold text-gray-300 hover:text-white duration-300 cursor-pointer">
-                      Testimonial
-                    </li>
-                  </Link>
-
-                  <Link
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    onClick={() => setMenu(false)}
-                  >
-                    <li className="text-xl font-semibold text-gray-300 hover:text-white duration-300 cursor-pointer">
-                      Contact
-                    </li>
-                  </Link>
+                  <ScrollLink to="home">Home</ScrollLink>
+                  <ScrollLink to="about">About</ScrollLink>
+                  <ScrollLink to="portfolio">Portfolio</ScrollLink>
+                  <ScrollLink to="testimonial">Testimonial</ScrollLink>
+                  <ScrollLink to="contact">Contact</ScrollLink>
                 </ul>
               </div>
               <div className="text-lg font-thin mt-32">

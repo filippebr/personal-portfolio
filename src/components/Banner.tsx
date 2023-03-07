@@ -3,7 +3,7 @@
 import Design from './Design'
 import { Link } from 'react-scroll'
 import { HiMinus } from 'react-icons/hi'
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 function Banner() {
   const ref = useRef<string | any>('')
@@ -12,12 +12,31 @@ function Banner() {
       setMenu(false)
     }
   }
+  const [navColor, setnavColor] = useState('transparent')
+
+  const listendScrollEvent = () => {
+    window.scrollY > 10 ? setnavColor('#000') : setnavColor('transparent')
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', listendScrollEvent)
+    return () => {
+      window.removeEventListener('scroll', listendScrollEvent)
+    }
+  }, [])
+
   const [menu, setMenu] = useState(false)
   return (
     <section id="home" className="w-full h-[800px] relative text-white">
       <Design />
       <div className="absolute left-0 top-0 w-full h-[800px] bg-black bg-opacity-10 ">
-        <nav className="w-full px-16 py-6 flex justify-between fixed top-0 z-40 bg-black bg-opacity-25">
+        <nav
+          style={{
+            backgroundColor: navColor,
+            transition: 'all 1s',
+          }}
+          className="w-full px-16 py-6 flex justify-between fixed top-0 z-40 bg-black bg-opacity-25"
+        >
           <h1 className="font-bodyFont text-4xl text-white font-extrabold border-2 w-12 text-center">
             S
           </h1>

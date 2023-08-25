@@ -14,8 +14,11 @@ module.exports = {
         "contact-image": "url('/assets/contact.jpg')"
       },
       colors: {
-        yellow: "#F7D449",
-        grayMedium: "#AEAEAE"
+        grayMedium: "#AEAEAE",
+        midnightBlue: "#191D88",
+        sapphire: "#1450A3",
+        dodgerBlue: "#337CCF",
+        yellow: "#F7D449"
       },
       boxShadow: {
         cardShadow: "0px 0px 5px 10px rgba(0,0,0,0.1)",

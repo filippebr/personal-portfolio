@@ -54,15 +54,15 @@ function Banner() {
           </div>
         </nav>
         <div className="w-full h-full flex flex-col justify-center items-center px-4">
-          <h1 className="text-[50px] md:text-[80px] lg:text-[100px] font-black">
+          <h1 className="text-[50px] md:text-[80px] lg:text-[100px] font-black text-dodgerBlue">
             I&apos;m Filippe Braga
           </h1>
           <div className="flex items-center gap-2 md:gap-6 text-base md:text-xl font-bold bg-yellow px-6 py-3 uppercase">
-            <h2 className="tracking-[4px]">Programmer</h2>
-            <HiMinus className="text-2xl rotate-90" />
-            <h2 className="tracking-[4px]">Designer</h2>
-            <HiMinus className="text-2xl rotate-90" />
-            <h2 className="tracking-[4px]">3D Creator</h2>
+            <h2 className="tracking-[4px] text-dodgerBlue">Programmer</h2>
+            <HiMinus className="text-2xl rotate-90 text-dodgerBlue" />
+            <h2 className="tracking-[4px] text-dodgerBlue">Designer</h2>
+            <HiMinus className="text-2xl rotate-90 text-dodgerBlue" />
+            <h2 className="tracking-[4px] text-dodgerBlue">3D Creator</h2>
           </div>
         </div>
       </div>

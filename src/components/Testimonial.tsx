@@ -67,7 +67,7 @@ function Testimonial() {
         <div>
           <Slider {...settings}>
             <div>
-              <p className="text-xl text-textColor text-center leading-8">
+              <p className="text-xl text-grayMedium text-center leading-8">
                 <span className="text-white">Apple company CEO - </span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
                 impedit eaque id fuga odit dolorum eligendi, vel repellendus
@@ -80,7 +80,7 @@ function Testimonial() {
               </p>
             </div>
             <div>
-              <p className="text-xl text-textColor text-center leading-8">
+              <p className="text-xl text-grayMedium text-center leading-8">
                 <span className="text-white">Apple company CEO - </span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
                 impedit eaque id fuga odit dolorum eligendi, vel repellendus
@@ -93,7 +93,7 @@ function Testimonial() {
               </p>
             </div>
             <div>
-              <p className="text-xl text-textColor text-center leading-8">
+              <p className="text-xl text-grayMedium text-center leading-8">
                 <span className="text-white">Apple company CEO - </span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
                 impedit eaque id fuga odit dolorum eligendi, vel repellendus

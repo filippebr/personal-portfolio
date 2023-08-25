@@ -1,7 +1,7 @@
 'use client'
-import { FormEvent, useState } from 'react'
 import { motion } from 'framer-motion'
-import { FaMap, FaPhoneAlt, FaEnvelope } from 'react-icons/fa'
+import { FormEvent, useState } from 'react'
+import { FaEnvelope, FaMap, FaPhoneAlt } from 'react-icons/fa'
 
 function Contact() {
   const [username, setUsername] = useState('')
@@ -36,15 +36,15 @@ function Contact() {
           </h1>
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-col items-center gap-3">
-              <FaMap className="text-4xl text-designColor" />
+              <FaMap className="text-4xl text-yellow" />
               <p className="text-sm tracking-wide">São Paulo, Brasil</p>
             </div>
             <div className="flex flex-col items-center gap-3">
-              <FaPhoneAlt className="text-4xl text-designColor" />
+              <FaPhoneAlt className="text-4xl text-yellow" />
               <p className="text-sm tracking-wide">+9999999999</p>
             </div>
             <div className="flex flex-col items-center gap-3">
-              <FaEnvelope className="text-4xl text-designColor" />
+              <FaEnvelope className="text-4xl text-yellow" />
               <p className="text-sm tracking-wide">webdevfibr@protonmail.com</p>
             </div>
           </div>
@@ -63,20 +63,20 @@ function Contact() {
                 <input
                   onChange={(e) => setUsername(e.target.value)}
                   placeholder="Name"
-                  className="w-full md:w-1/2 py-2 px-4 text-base text-black placeholder:text-gray-600 font-bold placeholder:font-normal outline-none border-transparent border-2 focus-within:border-designColor duration-200"
+                  className="w-full md:w-1/2 py-2 px-4 text-base text-black placeholder:text-gray-600 font-bold placeholder:font-normal outline-none border-transparent border-2 focus-within:border-yellow duration-200"
                   type="text"
                 />
                 <input
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Email"
-                  className="w-full md:w-1/2 py-2 px-4 text-base text-black placeholder:text-gray-600 font-bold placeholder:font-normal outline-none border-transparent border-2 focus-within:border-designColor duration-200"
+                  className="w-full md:w-1/2 py-2 px-4 text-base text-black placeholder:text-gray-600 font-bold placeholder:font-normal outline-none border-transparent border-2 focus-within:border-yellow duration-200"
                   type="email"
                 />
               </div>
 
               <textarea
                 onChange={(e) => setMessage(e.target.value)}
-                className="w-full text-lg h-36 p-4 text-black placeholder:text-gray-600 font-bold placeholder:font-normal outline-none border-transparent border-2 focus-within:border-designColor duration-200 resize-none"
+                className="w-full text-lg h-36 p-4 text-black placeholder:text-gray-600 font-bold placeholder:font-normal outline-none border-transparent border-2 focus-within:border-yellow duration-200 resize-none"
                 placeholder="Your Messages"
               ></textarea>
               {errMsg && (
@@ -86,7 +86,7 @@ function Contact() {
               )}
               <button
                 onClick={handleSubmit}
-                className="w-44 h-12 bg-designColor text-base uppercase font-bold tracking-wide border-2 border-transparent hover:bg-black hover:border-designColor duration-300"
+                className="w-44 h-12 bg-yellow text-base uppercase font-bold tracking-wide border-2 border-transparent hover:bg-black hover:border-yellow duration-300"
               >
                 Submit Now
               </button>
@@ -97,7 +97,7 @@ function Contact() {
               <p>For project enquires</p>
               <p>
                 or say Hello -{' '}
-                <span className="font-semibold text-designColor">
+                <span className="font-semibold text-yellow">
                   webdevfibr@protonmail.com
                 </span>
               </p>

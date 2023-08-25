@@ -1,4 +1,3 @@
-import React from 'react'
 import AboutList from './AboutList'
 
 function AboutMe() {
@@ -11,7 +10,7 @@ function AboutMe() {
         <h1 className="text-3xl uppercase font-semibold text-center">
           A Story about me.
         </h1>
-        <p className="text-xl md:text-3xl font-medium md:leading-relaxed text-textColor">
+        <p className="text-xl md:text-3xl font-medium md:leading-relaxed text-grayMedium">
           I&apos;m{' '}
           <span className="font-bold tracking-wider text-white">
             Filippe Braga

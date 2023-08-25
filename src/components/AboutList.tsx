@@ -7,7 +7,7 @@ type Props = {
 function AboutList({ title }: Props) {
   return (
     <h4 className="text-2xl font-semibold flex items-center gap-4">
-      <span className="text-designColor">
+      <span className="text-yellow">
         <HiChevronDoubleRight />
       </span>
       {title}

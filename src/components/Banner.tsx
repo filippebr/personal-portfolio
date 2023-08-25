@@ -1,8 +1,8 @@
 'use client'
 
-import Design from './Design'
-import { HiMinus } from 'react-icons/hi'
 import { MouseEvent, useEffect, useRef, useState } from 'react'
+import { HiMinus } from 'react-icons/hi'
+import Design from './Design'
 import ScrollLink from './ScrollLink'
 
 function Banner() {
@@ -48,16 +48,16 @@ function Banner() {
             onClick={() => setMenu(true)}
             className="w-8 h-6 group flex flex-col items-center justify-between cursor-pointer"
           >
-            <span className="w-full h-[3px] bg-designColor inline-flex group-hover:w-4 duration-300"></span>
-            <span className="w-full h-[3px] bg-designColor inline-flex"></span>
-            <span className="w-full h-[3px] bg-designColor inline-flex group-hover:w-4 duration-300"></span>
+            <span className="w-full h-[3px] bg-yellow inline-flex group-hover:w-4 duration-300"></span>
+            <span className="w-full h-[3px] bg-yellow inline-flex"></span>
+            <span className="w-full h-[3px] bg-yellow inline-flex group-hover:w-4 duration-300"></span>
           </div>
         </nav>
         <div className="w-full h-full flex flex-col justify-center items-center px-4">
           <h1 className="text-[50px] md:text-[80px] lg:text-[100px] font-black">
             I&apos;m Filippe Braga
           </h1>
-          <div className="flex items-center gap-2 md:gap-6 text-base md:text-xl font-bold bg-designColor px-6 py-3 uppercase">
+          <div className="flex items-center gap-2 md:gap-6 text-base md:text-xl font-bold bg-yellow px-6 py-3 uppercase">
             <h2 className="tracking-[4px]">Programmer</h2>
             <HiMinus className="text-2xl rotate-90" />
             <h2 className="tracking-[4px]">Designer</h2>
@@ -87,7 +87,7 @@ function Banner() {
                 <p>For project enqueries</p>
                 <p>
                   or say &lsquo;Hello&lsquo; -{' '}
-                  <span className="font-semibold text-designColor">
+                  <span className="font-semibold text-yellow">
                     webdevfibr@protonmail.com
                   </span>
                 </p>
@@ -96,7 +96,7 @@ function Banner() {
             <div className="w-1/5 h-full border-1-[1px] text-center flex items-center justify-center">
               <button
                 onClick={() => setMenu(false)}
-                className="text-3xl font-black text-designColor"
+                className="text-3xl font-black text-yellow"
               >
                 X
               </button>

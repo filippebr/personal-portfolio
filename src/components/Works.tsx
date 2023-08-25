@@ -16,7 +16,7 @@ function Works() {
           />
           <div className="absolute w-full h-[480px] left-0 top-0">
             <div className="w-full h-full relative bg-black bg-opacity-70 hidden group-hover:inline-block transition-opacity duration-500">
-              <h1 className="text-2xl text-center font-bold bg-yellow px-6 py-2 w-60 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-10">
+              <h1 className="text-2xl text-center font-bold text-black bg-yellow px-6 py-2 w-60 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-10">
                 Web Design
               </h1>
             </div>
@@ -30,7 +30,7 @@ function Works() {
           />
           <div className="absolute w-full h-[480px] left-0 top-0">
             <div className="w-full h-full relative bg-black bg-opacity-70 hidden group-hover:inline-block transition-opacity duration-500">
-              <h1 className="text-2xl text-center font-bold bg-yellow px-6 py-2 w-60 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-10">
+              <h1 className="text-2xl text-center font-bold text-black bg-yellow px-6 py-2 w-60 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-10">
                 Web Design
               </h1>
             </div>
@@ -44,7 +44,7 @@ function Works() {
           />
           <div className="absolute w-full h-[480px] left-0 top-0">
             <div className="w-full h-full relative bg-black bg-opacity-70 hidden group-hover:inline-block transition-opacity duration-500">
-              <h1 className="text-2xl text-center font-bold bg-yellow px-6 py-2 w-60 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-10">
+              <h1 className="text-2xl text-center font-bold text-black bg-yellow px-6 py-2 w-60 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-10">
                 Interior Design
               </h1>
             </div>
@@ -58,7 +58,7 @@ function Works() {
           />
           <div className="absolute w-full h-[480px] left-0 top-0">
             <div className="w-full h-full relative bg-black bg-opacity-70 hidden group-hover:inline-block transition-opacity duration-500">
-              <h1 className="text-2xl text-center font-bold bg-yellow px-6 py-2 w-60 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-10">
+              <h1 className="text-2xl text-center font-bold text-black bg-yellow px-6 py-2 w-60 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-10">
                 Interior Design
               </h1>
             </div>

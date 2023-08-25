@@ -86,7 +86,7 @@ function Contact() {
               )}
               <button
                 onClick={handleSubmit}
-                className="w-44 h-12 text-black bg-yellow text-base uppercase font-bold tracking-wide border-2 border-transparent hover:bg-black hover:border-yellow duration-300"
+                className="w-44 h-12 text-black bg-yellow text-base uppercase font-bold tracking-wide border-2 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300"
               >
                 Submit Now
               </button>

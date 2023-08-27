@@ -53,7 +53,7 @@ function Banner() {
             <span className="w-full h-[3px] bg-yellow inline-flex group-hover:w-4 duration-300"></span>
           </div>
         </nav>
-        <div className="w-full h-full flex flex-col justify-center items-center px-4">
+        <div className="w-full h-full flex flex-col justify-end items-center px-4 pb-20">
           <h1 className="text-[50px] md:text-[80px] lg:text-[100px] font-black text-grayLight">
             Filippe Braga
           </h1>

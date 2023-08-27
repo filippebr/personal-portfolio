@@ -1,4 +1,4 @@
-import { bgFour, bgOne, bgThree, bgTwo } from '../../public/assets/index'
+import { bgFour, bgOne, bgThree, bgTwo } from '../assets/index'
 
 const imagesData = [
   {

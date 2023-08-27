@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import imagesData from 'public/database/imagesData'
+import imagesData from 'public/data/imagesData'
 
 function Works() {
   return (

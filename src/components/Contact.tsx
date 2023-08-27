@@ -36,7 +36,7 @@ function Contact() {
       id="contact"
       className="w-full h-[900px] md:h-[800px]  bg-contact-image bg-no-repeat bg-cover bg-fixed text-white px-0 relative"
     >
-      <div className="w-full h-full bg-black bg-opacity-90 px-5 py-20">
+      <div className="w-full h-full overflow-hidden bg-black bg-opacity-90 px-5 py-20">
         <div className="max-w-6xl h-full mx-auto flex flex-col gap-6 md:gap-12">
           <h1 className="text-3xl font-thin tracking-widest uppercase text-center">
             Say Hello!
@@ -78,7 +78,7 @@ function Contact() {
 
               <textarea
                 onChange={(e) => setMessage(e.target.value)}
-                className="w-full text-lg h-36 p-4 text-black placeholder:text-gray-600 font-bold placeholder:font-normal outline-none border-transparent border-2 focus-within:border-yellow duration-200 resize-none"
+                className="w-full text-lg h-42 p-4 text-black placeholder:text-gray-600 font-bold placeholder:font-normal outline-none border-transparent border-2 focus-within:border-yellow duration-200 resize-none"
                 placeholder="Your Messages"
               ></textarea>
               {errMsg && (

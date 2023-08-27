@@ -8,7 +8,7 @@ function AboutMe() {
     >
       <div className="max-w-5xl mx-auto flex flex-col gap-6 md:gap-16">
         <h1 className="text-3xl uppercase font-semibold text-center">
-          A Story about me.
+          A Story about me
         </h1>
         <p className="text-xl md:text-3xl font-medium md:leading-relaxed text-grayMedium">
           I&apos;m{' '}
@@ -17,7 +17,7 @@ function AboutMe() {
           </span>{' '}
           I&apos;m a freelancer{' '}
           <span className="font-bold text-white">
-            in Web Developer and a 3D Creator{' '}
+            in Web Developer and in 3D Creation{' '}
           </span>
           I'm creating projects in Javascript for more than 6 years 
           and creating 3D projects for more than 10 years, I love 

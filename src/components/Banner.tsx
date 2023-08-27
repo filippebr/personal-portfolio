@@ -55,7 +55,7 @@ function Banner() {
         </nav>
         <div className="w-full h-full flex flex-col justify-center items-center px-4">
           <h1 className="text-[50px] md:text-[80px] lg:text-[100px] font-black text-grayLight">
-            I&apos;m Filippe Braga
+            Filippe Braga
           </h1>
           <div className="flex items-center gap-2 md:gap-6 text-base md:text-xl font-bold bg-yellow px-6 py-3 uppercase">
             <h2 className="tracking-[4px] text-black">Programmer</h2>

@@ -11,12 +11,12 @@ function OfferCard({
   subTitle,
 }: Props): React.ReactElement<Props> {
   return (
-    <div className="w-full shadow-cardShadow flex flex-col items-center justify-center gap-8 py-16">
-      {Icon && <Icon className="text-yellow text-7xl" />}
-      <h1 className="text-2xl font-semibold text-gray-100 uppercase tracking-[10px]">
+    <div className="w-full shadow-cardShadow flex flex-col items-center justify-center gap-4 py-8">
+      {Icon && <Icon className="text-yellow text-5xl" />}
+      <h1 className="text-xl font-semibold text-gray-100 uppercase tracking-[6px]">
         {title}
       </h1>
-      <p className="text-2xl text-grayMedium px-10 text-center leading-[40px]">
+      <p className="text-xl text-grayMedium px-10 text-center leading-[32px]">
         {subTitle}
       </p>
     </div>

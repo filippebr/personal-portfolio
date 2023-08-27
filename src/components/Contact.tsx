@@ -11,19 +11,26 @@ function Contact() {
   const [successMsg, setSuccessMsg] = useState('')
 
   const handleSubmit = (e: FormEvent<HTMLButtonElement>) => {
-    e.preventDefault()
-    if (username === '') {
-      setErrMsg('Enter your Name')
-    } else if (email === '') {
-      setErrMsg('Enter your Emails')
-    } else if (message === '') {
-      setErrMsg('Enter your Messages')
-    } else {
-      setSuccessMsg(
-        `Hello dear ${username}, thank you for your Messages. Additional Information will send to you shortly via your email at ${email}`,
-      )
+    e.preventDefault();
+  
+    if (!username) {
+      setErrMsg('Please enter your name.');
+      return;
     }
-  }
+  
+    if (!email) {
+      setErrMsg('Please enter your email.');
+      return;
+    }
+  
+    if (!message) {
+      setErrMsg('Please enter your message.');
+      return;
+    }
+  
+    const successMessage = `Hello dear ${username}, thank you for your message. Additional information will be sent to you shortly via your email at ${email}.`;
+    setSuccessMsg(successMessage);
+  };
   return (
     <section
       id="contact"

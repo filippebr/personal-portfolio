@@ -15,14 +15,14 @@ function AboutMe() {
           <span className="font-bold tracking-wider text-white">
             Filippe Braga
           </span>{' '}
-          and I&apos;m a freelancer{' '}
+          I&apos;m a freelancer{' '}
           <span className="font-bold text-white">
-            Web Developer and a 3D Creator
+            in Web Developer and a 3D Creator{' '}
           </span>
-          . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
-          voluptates tempora doloribus mollitia! Neque tempore eum non maiores
-          dolore vitae amet assumenda a quisquam! Voluptate dignissimos unde
-          deleniti optio aperiam?
+          I'm creating projects in Javascript for more than 6 years 
+          and creating 3D projects for more than 10 years, I love 
+          to create something new, something to inspire myself and 
+          others to be better.
         </p>
         <div className="w-[700px] grid grid-cols-1 md:grid-cols-2 gap-8">
           <AboutList title="Web Design" />

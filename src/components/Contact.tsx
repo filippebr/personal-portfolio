@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
+import contactData from 'public/data/contactData'
 import { FormEvent, useState } from 'react'
-import { FaEnvelope, FaMap, FaPhoneAlt } from 'react-icons/fa'
 
 function Contact() {
   const [username, setUsername] = useState('')
@@ -42,18 +42,13 @@ function Contact() {
             Say Hello!
           </h1>
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex flex-col items-center gap-3">
-              <FaMap className="text-4xl text-yellow" />
-              <p className="text-sm tracking-wide">São Paulo, Brasil</p>
-            </div>
-            <div className="flex flex-col items-center gap-3">
-              <FaPhoneAlt className="text-4xl text-yellow" />
-              <p className="text-sm tracking-wide">+9999999999</p>
-            </div>
-            <div className="flex flex-col items-center gap-3">
-              <FaEnvelope className="text-4xl text-yellow" />
-              <p className="text-sm tracking-wide">webdevfibr@protonmail.com</p>
-            </div>
+            {contactData.map((data) => (
+              <div key={data.id} className="flex flex-col items-center gap-3">
+                {data.icon}
+                <p className="text-sm tracking-wide">{data.label}</p>
+                <p className="text-sm tracking-wide">{data.value}</p>
+              </div>
+            ))}
           </div>
           {successMsg ? (
             <motion.p

@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import contactData from 'public/data/contactData'
+import ContactData from 'public/data/ContactData'
 import { FormEvent, useState } from 'react'
 import FormContact from './formContact'
 
@@ -43,7 +43,7 @@ function Contact() {
             Say Hello!
           </h1>
           <div className="flex flex-col md:flex-row justify-between items-center">
-            {contactData.map((data) => (
+            {ContactData.map((data) => (
               <div key={data.id} className="flex flex-col items-center gap-3">
                 {data.icon}
                 <p className="text-sm tracking-wide">{data.label}</p>

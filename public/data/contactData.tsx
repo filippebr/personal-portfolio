@@ -1,6 +1,6 @@
 import { FaEnvelope, FaMap, FaPhoneAlt } from 'react-icons/fa'
 
-const contactData = [
+const ContactData = [
   {
     id: '1',
     icon: <FaMap className="text-4xl text-yellow" />,
@@ -21,4 +21,4 @@ const contactData = [
   },
 ];
 
-export default contactData
+export default ContactData

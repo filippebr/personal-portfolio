@@ -1,6 +1,6 @@
 import { FaCode, FaCube, FaRobot, FaServer, FaWindowRestore } from "react-icons/fa"
 
-const offerCardData = [
+const OfferCardData = [
   {
     id: 1,
     title: 'Web Design',
@@ -34,4 +34,4 @@ const offerCardData = [
   // Add more cards here
 ];
 
-export default offerCardData
+export default OfferCardData

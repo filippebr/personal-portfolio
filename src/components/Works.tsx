@@ -1,14 +1,31 @@
 import Image from 'next/image'
-import imagesData from 'public/data/imagesData'
+import GalleryData from 'public/data/GalleryData'
+import { useEffect, useState } from 'react'
+
+type GalleryType = {
+  id: number,
+  title: string,
+  imageSrc: string
+}
 
 function Works() {
+
+  const [data, setData] = useState(GalleryData)
+  const [collection, setCollection] = useState<GalleryType[]>([])
+
+  useEffect(() => {
+    setCollection([...new Set(GalleryData.map((item) => item.title))]);
+  }, []);
+
+  console.log(collection)
+
   return (
     <section id="portfolio" className="w-full h-full bg-black text-white py-28">
       <h1 className="text-3xl uppercase tracking-[10px] font-semibold text-center">
         Featured Works
       </h1>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-0 h-[1000px] md:h-[480px] mt-16 px-6">
-        {imagesData.map((image) => (
+        {collection.map((image) => (
           <div key={image.id} className="w-full h-full relative overflow-hidden group">
           <Image
             className="w-full h-full object-cover scale-125 group-hover:scale-100 duration-500"

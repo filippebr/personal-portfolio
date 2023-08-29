@@ -1,6 +1,6 @@
 import { bgFour, bgOne, bgThree, bgTwo } from '../assets/index'
 
-const imagesData = [
+const GalleryData = [
   {
     id: 1,
     title: 'Web Design',
@@ -24,4 +24,4 @@ const imagesData = [
   // Add more cards here
 ];
 
-export default imagesData
+export default GalleryData

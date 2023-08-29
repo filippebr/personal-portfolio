@@ -1,46 +1,11 @@
 'use client'
 
-import Image, { StaticImageData } from 'next/image'
-import { bgFour, bgOne, bgThree, bgTwo } from 'public/assets/index'
+import Image from 'next/image'
+import { GalleryData, ImageType } from 'public/data/GalleryData'
 import { useState } from 'react'
 
-interface ImageType {
-  id: number;
-  title: string;
-  type: string;
-  imageSrc: StaticImageData;
-}
-
-const ImageData: ImageType[] = [
-  {
-    id: 1,
-    title: 'Web Design',
-    type: 'web',
-    imageSrc: bgOne,
-  },
-  {
-    id: 2,
-    title: 'Graphic Design',
-    type: 'graphic',
-    imageSrc: bgTwo,
-  },
-  {
-    id: 3,
-    title: 'Web Design',
-    type: 'web',
-    imageSrc: bgThree,
-  },
-  {
-    id: 4,
-    title: 'Graphic Design',
-    type: 'graphic',
-    imageSrc: bgFour,
-  },
-  // ...
-];
-
 const ImageGallery: React.FC = () => {
-  const [images, setImages] = useState<ImageType[]>(ImageData);
+  const [images, setImages] = useState<ImageType[]>(GalleryData);
   const [filteredImages, setFilteredImages] = useState<ImageType[]>(images);
 
   // Filtering function

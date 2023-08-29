@@ -1,11 +1,11 @@
-import 'slick-carousel/slick/slick.css'
 import AboutMe from '@/components/AboutMe'
 import Banner from '@/components/Banner'
-import Offers from '@/components/Offers'
-import Testimonial from '@/components/Testimonial'
-import Works from '@/components/Works'
 import Contact from '@/components/Contact'
+import Works from '@/components/ImageGallery'
+import Offers from '@/components/Offers'
 import ScrollBtn from '@/components/ScrollBtn'
+import Testimonial from '@/components/Testimonial'
+import 'slick-carousel/slick/slick.css'
 
 const Home = () => {
   return (

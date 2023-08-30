@@ -44,11 +44,11 @@ const ImageGallery: React.FC = () => {
           Reset
         </button>
       </div>
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-0 h-[1000px] md:h-[480px] px-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-0 h-[1000px] md:h-[480px] px-6">
         {filteredImages.map((image) => (
-          <div key={image.id} className="w-full h-full relative overflow-hidden group">
+          <div key={image.id} className="relative overflow-hidden group">
           <Image
-            className="w-full h-full object-cover scale-125 group-hover:scale-100 duration-500"
+            className="h-full object-cover scale-125 group-hover:scale-100 duration-500"
             width={768}
             height={768}
             src={image.imageSrc}

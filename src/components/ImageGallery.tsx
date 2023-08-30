@@ -20,10 +20,10 @@ const ImageGallery: React.FC = () => {
         Works
       </h1>
       <div className="grid grid-cols-4 text-base font-bold mt-8 mx-6">
-        <button className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase hover:bg-opacity-90 duration-500" onClick={() => filterImagesByType('web')}>Web</button>
-        <button className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase hover:bg-opacity-90 duration-500" onClick={() => filterImagesByType('graphic')}>Graphic</button>
-        <button className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase hover:bg-opacity-90 duration-500" onClick={() => filterImagesByType('graphic')}>Graphic</button>
-        <button className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase hover:bg-opacity-90 duration-500" onClick={() => setFilteredImages(images)}>Reset</button>
+        <button className="border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300 text-center py-4 text-2xl font-bold bg-yellow text-black uppercase" onClick={() => filterImagesByType('web')}>Web</button>
+        <button className="border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300 text-center py-4 text-2xl font-bold bg-yellow text-black uppercase" onClick={() => filterImagesByType('graphic')}>Graphic</button>
+        <button className="border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300 text-center py-4 text-2xl font-bold bg-yellow text-black uppercase" onClick={() => filterImagesByType('graphic')}>Graphic</button>
+        <button className="border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300 text-center py-4 text-2xl font-bold bg-yellow text-black uppercase" onClick={() => setFilteredImages(images)}>Reset</button>
       </div>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-0 h-[1000px] md:h-[480px] px-6">
         {filteredImages.map((image) => (

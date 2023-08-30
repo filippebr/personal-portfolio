@@ -1,10 +1,10 @@
-import AboutMe from '@/components/AboutMe'
+// import AboutMe from '@/components/AboutMe'
 import Banner from '@/components/Banner'
 import Contact from '@/components/Contact'
 import Works from '@/components/ImageGallery'
 import Offers from '@/components/Offers'
 import ScrollBtn from '@/components/ScrollBtn'
-import Testimonial from '@/components/Testimonial'
+// import Testimonial from '@/components/Testimonial'
 import 'slick-carousel/slick/slick.css'
 
 const Home = () => {
@@ -12,10 +12,10 @@ const Home = () => {
     <>
       <div className="font-bodyFont">
         <Banner />
-        <AboutMe />
+        {/* <AboutMe /> */}
         <Offers />
         <Works />
-        <Testimonial />
+        {/* <Testimonial /> */}
         <Contact />
       </div>
       <ScrollBtn />

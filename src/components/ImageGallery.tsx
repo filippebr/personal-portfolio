@@ -5,14 +5,14 @@ import { GalleryData, ImageType } from 'public/data/GalleryData'
 import { useState } from 'react'
 
 const ImageGallery: React.FC = () => {
-  const [images, setImages] = useState<ImageType[]>(GalleryData);
-  const [filteredImages, setFilteredImages] = useState<ImageType[]>(images);
+  const [images, setImages] = useState<ImageType[]>(GalleryData)
+  const [filteredImages, setFilteredImages] = useState<ImageType[]>(images)
 
   // Filtering function
   const filterImagesByType = (filterType: string) => {
-    const filtered = images.filter(image => image.type === filterType);
-    setFilteredImages(filtered);
-  };
+    const filtered = images.filter(image => image.type === filterType)
+    setFilteredImages(filtered)
+  }
 
   return (
     <section id="portfolio" className="w-full h-full bg-black text-white py-28">

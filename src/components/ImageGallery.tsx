@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import { GalleryData, ImageType } from 'public/data/GalleryData'
 import { useState } from 'react'
-import { HiMinus } from 'react-icons/hi'
 
 const ImageGallery: React.FC = () => {
   const [images, setImages] = useState<ImageType[]>(GalleryData);
@@ -20,16 +19,13 @@ const ImageGallery: React.FC = () => {
       <h1 className="text-3xl uppercase tracking-[10px] font-semibold text-center">
         Works
       </h1>
-      <div className="flex items-center text-base md:text-xl font-bold bg-yellow mt-8 mx-6">
-        <button className="justify-center py-4 text-2xl w-full font-bold bg-yellow text-black uppercase" onClick={() => filterImagesByType('web')}>Web</button>
-        <HiMinus className="text-2xl w-full h-8 rotate-90 text-black" />
-        <button className="justify-center py-4 text-2xl w-full font-bold bg-yellow text-black uppercase" onClick={() => filterImagesByType('graphic')}>Graphic</button>
-        <HiMinus className="text-2xl w-full h-8 rotate-90 text-black" />
-        <button className="justify-center py-4 text-2xl w-full font-bold bg-yellow text-black uppercase" onClick={() => filterImagesByType('graphic')}>Graphic</button>
-        <HiMinus className="text-2xl w-full h-8 rotate-90 text-black" />
-        <button className="justify-center py-4 text-2xl w-full font-bold bg-yellow text-black uppercase" onClick={() => setFilteredImages(images)}>Reset</button>
+      <div className="grid grid-cols-4 text-base font-bold mt-8 mx-6">
+        <button className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase hover:bg-opacity-90 duration-500" onClick={() => filterImagesByType('web')}>Web</button>
+        <button className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase hover:bg-opacity-90 duration-500" onClick={() => filterImagesByType('graphic')}>Graphic</button>
+        <button className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase hover:bg-opacity-90 duration-500" onClick={() => filterImagesByType('graphic')}>Graphic</button>
+        <button className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase hover:bg-opacity-90 duration-500" onClick={() => setFilteredImages(images)}>Reset</button>
       </div>
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-0 h-[1000px] md:h-[480px] mt-16 px-6">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-0 h-[1000px] md:h-[480px] px-6">
         {filteredImages.map((image) => (
           <div key={image.id} className="w-full h-full relative overflow-hidden group">
           <Image

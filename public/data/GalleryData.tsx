@@ -11,13 +11,13 @@ export interface ImageType {
 export const GalleryData: ImageType[] = [
   {
     id: 1,
-    title: 'Abstract Image Crossmind',
+    title: 'Abstract Crossmind',
     type: 'blender',
     imageSrc: imgBlender01,
   },
   {
     id: 2,
-    title: 'Baroque Ornament Elephant',
+    title: 'Ornament Elephant',
     type: 'blender',
     imageSrc: imgBlender02,
   },
@@ -29,7 +29,7 @@ export const GalleryData: ImageType[] = [
   },
   {
     id: 4,
-    title: 'Cosmetic Mockup Derek',
+    title: 'Cosmetic Mockup',
     type: 'blender',
     imageSrc: imgBlender04,
   },

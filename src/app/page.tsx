@@ -1,5 +1,4 @@
 // import AboutMe from '@/components/AboutMe'
-import Banner from '@/components/Banner'
 import Contact from '@/components/Contact'
 import Works from '@/components/ImageGallery'
 import Offers from '@/components/Offers'
@@ -11,7 +10,7 @@ const Home = () => {
   return (
     <>
       <div className="font-bodyFont">
-        <Banner />
+        {/* <Banner /> */}
         {/* <AboutMe /> */}
         <Offers />
         <Works />

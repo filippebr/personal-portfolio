@@ -49,8 +49,10 @@ const ImageGallery: React.FC = () => {
           <div key={image.id} className="relative overflow-hidden group">
           <Image
             className="h-full object-cover scale-125 group-hover:scale-100 duration-500"
-            width={768}
-            height={768}
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: '100%', height: 'auto' }}
             src={image.imageSrc}
             alt={`bg${image.title}`}
           />

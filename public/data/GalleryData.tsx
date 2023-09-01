@@ -1,5 +1,5 @@
 import { StaticImageData } from 'next/image'
-import { imgBlender01, imgBlender02, imgBlender03, imgBlender04, imgBlender05, imgBlender06, imgBlender07, imgBlender08 } from '../assets/index'
+import { imgBlender01, imgBlender02, imgBlender03, imgBlender04, imgBlender05, imgBlender06, imgBlender07, imgBlender08, imgBlender09, imgBlender10, imgBlender11, imgBlender12 } from '../assets/index'
 
 export interface ImageType {
   id: number
@@ -35,13 +35,13 @@ export const GalleryData: ImageType[] = [
   },
   {
     id: 5,
-    title: 'Crystal',
+    title: 'Death Planet',
     type: 'blender',
     imageSrc: imgBlender05,
   },
   {
     id: 6,
-    title: 'Death Planet',
+    title: 'Diamond',
     type: 'blender',
     imageSrc: imgBlender06,
   },
@@ -53,8 +53,32 @@ export const GalleryData: ImageType[] = [
   },
   {
     id: 8,
-    title: 'Diamond',
+    title: 'Fireball',
     type: 'blender',
     imageSrc: imgBlender08,
+  },
+  {
+    id: 9,
+    title: 'Fractal Cube',
+    type: 'blender',
+    imageSrc: imgBlender09,
+  },
+  {
+    id: 10,
+    title: 'Leaves Ornament',
+    type: 'blender',
+    imageSrc: imgBlender10,
+  },
+  {
+    id: 11,
+    title: 'Baseball Cap',
+    type: 'blender',
+    imageSrc: imgBlender11,
+  },
+  {
+    id: 12,
+    title: 'Pepper Container',
+    type: 'blender',
+    imageSrc: imgBlender12,
   },
 ]

@@ -24,7 +24,7 @@ import imgBlender17 from '../assets/blender/skull_piston_wrench.jpg'
 import imgBlender18 from '../assets/blender/spider_yuji.jpg'
 import imgBlender19 from '../assets/blender/staff_energy.jpg'
 import imgBlender20 from '../assets/blender/the_one_ring_lotr_default_cube.jpg'
-import imgBlender21 from '../assets/blender/venus_milk_way.jpg'
+import imgBlender21 from '../assets/blender/venus_milk_way.png'
 import imgBlender22 from '../assets/blender/wine_bottle_derek.jpg'
 
 export { bgOne, bgTwo, bgThree, bgFour }

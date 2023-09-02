@@ -57,7 +57,7 @@ const ImageGallery: React.FC = () => {
           />
           <div className="absolute w-full h-full left-0 top-0">
             <div className="w-full h-full relative bg-black bg-opacity-50 hidden group-hover:inline-block transition-opacity duration-500">
-              <h1 className="text-2xl text-center font-bold text-black bg-yellow bg-opacity-50 px-6 py-2 w-60 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-10">
+              <h1 className="text-xl text-center font-bold text-black bg-yellow bg-opacity-50 px-6 py-2 w-60 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-10">
                 {image.title}
               </h1>
             </div>

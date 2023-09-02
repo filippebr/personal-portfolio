@@ -1,5 +1,10 @@
 import { StaticImageData } from 'next/image'
-import { imgBlender01, imgBlender02, imgBlender03, imgBlender04, imgBlender05, imgBlender06, imgBlender07, imgBlender08, imgBlender09, imgBlender10, imgBlender11, imgBlender12 } from '../assets/index'
+import {
+  imgBlender01, imgBlender02, imgBlender03, imgBlender04, imgBlender05,
+  imgBlender06, imgBlender07, imgBlender08, imgBlender09, imgBlender10,
+  imgBlender11, imgBlender12, imgBlender13, imgBlender14, imgBlender15,
+  imgBlender16, imgBlender17, imgBlender18
+} from '../assets/index'
 
 export interface ImageType {
   id: number
@@ -80,5 +85,41 @@ export const GalleryData: ImageType[] = [
     title: 'Pepper Container',
     type: 'blender',
     imageSrc: imgBlender12,
+  },
+  {
+    id: 13,
+    title: 'Quadcopter',
+    type: 'blender',
+    imageSrc: imgBlender13,
+  },
+  {
+    id: 14,
+    title: 'Samurai Helmet',
+    type: 'blender',
+    imageSrc: imgBlender14,
+  },
+  {
+    id: 15,
+    title: 'Shoe Skate',
+    type: 'blender',
+    imageSrc: imgBlender15,
+  },
+  {
+    id: 16,
+    title: 'Silver Mirror',
+    type: 'blender',
+    imageSrc: imgBlender16,
+  },
+  {
+    id: 17,
+    title: 'Skull Mechanic',
+    type: 'blender',
+    imageSrc: imgBlender17,
+  },
+  {
+    id: 18,
+    title: 'Spider Yuji',
+    type: 'blender',
+    imageSrc: imgBlender18,
   },
 ]

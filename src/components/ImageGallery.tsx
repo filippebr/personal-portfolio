@@ -22,21 +22,21 @@ const ImageGallery: React.FC = () => {
       <div className="grid grid-cols-4 text-base font-bold mt-8 mx-6">
         <button 
           className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300" 
+          onClick={() => filterImagesByType('blender')}
+        >
+          Blender
+        </button>
+        <button 
+          className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300" 
+          onClick={() => filterImagesByType('graphic')}
+        >
+          Graphic
+        </button>
+        <button 
+          className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300" 
           onClick={() => filterImagesByType('web')}
         >
           Web
-        </button>
-        <button 
-          className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300" 
-          onClick={() => filterImagesByType('graphic')}
-        >
-          Graphic
-        </button>
-        <button 
-          className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300" 
-          onClick={() => filterImagesByType('graphic')}
-        >
-          Graphic
         </button>
         <button className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300" 
           onClick={() => setFilteredImages(images)}

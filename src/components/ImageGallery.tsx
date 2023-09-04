@@ -8,6 +8,8 @@ const ImageGallery: React.FC = () => {
   const [images, setImages] = useState<ImageType[]>(GalleryData)
   const [filteredImages, setFilteredImages] = useState<ImageType[]>(images)
 
+  const imageTypes = Array.from(new Set(images.map(image => image.type)));
+
   // Filtering function
   const filterImagesByType = (filterType: string) => {
     const filtered = images.filter(image => image.type === filterType)
@@ -20,24 +22,15 @@ const ImageGallery: React.FC = () => {
         Works
       </h1>
       <div className="grid grid-cols-4 text-base font-bold mt-8 mx-6">
-        <button 
-          className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300" 
-          onClick={() => filterImagesByType('blender')}
-        >
-          Blender
-        </button>
-        <button 
-          className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300" 
-          onClick={() => filterImagesByType('graphic')}
-        >
-          Graphic
-        </button>
-        <button 
-          className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300" 
-          onClick={() => filterImagesByType('web')}
-        >
-          Web
-        </button>
+        {imageTypes.map(type => (
+          <button
+            key={type}
+            className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300"
+            onClick={() => filterImagesByType(type)}
+          >
+            {type.charAt(0).toUpperCase() + type.slice(1)}
+          </button>
+        ))}
         <button className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300" 
           onClick={() => setFilteredImages(images)}
         >

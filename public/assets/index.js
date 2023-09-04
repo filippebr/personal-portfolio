@@ -4,6 +4,7 @@ import bgThree from "../assets/bedroom_03.jpg"
 import bgFour from "../assets/bedroom_04.jpg"
 
 // Blender
+import imgBackend01 from '../assets/backend/backend.jpg'
 import imgBlender01 from '../assets/blender/abstract_image_crossmind.jpg'
 import imgBlender02 from '../assets/blender/baroque_ornament_elephant.jpg'
 import imgBlender03 from '../assets/blender/combat_knife.jpg'
@@ -33,7 +34,7 @@ export {
   imgBlender06, imgBlender07, imgBlender08, imgBlender09, imgBlender10,
   imgBlender11, imgBlender12, imgBlender13, imgBlender14, imgBlender15,
   imgBlender16, imgBlender17, imgBlender18, imgBlender19, imgBlender20,
-  imgBlender21, imgBlender22
+  imgBlender21, imgBlender22, imgBackend01
 }
 
 

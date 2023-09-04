@@ -3,7 +3,7 @@ import {
   imgBlender01, imgBlender02, imgBlender03, imgBlender04, imgBlender05,
   imgBlender06, imgBlender07, imgBlender08, imgBlender09, imgBlender10,
   imgBlender11, imgBlender12, imgBlender13, imgBlender14, imgBlender15,
-  imgBlender16, imgBlender17, imgBlender18
+  imgBlender16, imgBlender17, imgBlender18, imgBlender19, imgBlender20, imgBlender21, imgBlender22
 } from '../assets/index'
 
 export interface ImageType {
@@ -121,5 +121,29 @@ export const GalleryData: ImageType[] = [
     title: 'Spider Yuji',
     type: 'blender',
     imageSrc: imgBlender18,
+  },
+  {
+    id: 19,
+    title: 'Staff Energy',
+    type: 'blender',
+    imageSrc: imgBlender19,
+  },
+  {
+    id: 20,
+    title: 'The One Ring',
+    type: 'blender',
+    imageSrc: imgBlender20,
+  },
+  {
+    id: 21,
+    title: 'Venus',
+    type: 'blender',
+    imageSrc: imgBlender21,
+  },
+  {
+    id: 22,
+    title: 'Wine Bottle',
+    type: 'blender',
+    imageSrc: imgBlender22,
   },
 ]

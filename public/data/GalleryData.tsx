@@ -3,7 +3,7 @@ import {
   imgBackend01, imgBlender01, imgBlender02, imgBlender03, imgBlender04, imgBlender05,
   imgBlender06, imgBlender07, imgBlender08, imgBlender09, imgBlender10,
   imgBlender11, imgBlender12, imgBlender13, imgBlender14, imgBlender15,
-  imgBlender16, imgBlender17, imgBlender18, imgBlender19, imgBlender20, imgBlender21, imgBlender22
+  imgBlender16, imgBlender17, imgBlender18, imgBlender19, imgBlender20, imgBlender21, imgBlender22, imgFrontend01, imgWebDesign01
 } from '../assets/index'
 
 export interface ImageType {
@@ -151,5 +151,17 @@ export const GalleryData: ImageType[] = [
     title: 'Ecommerce Developer Corner',
     type: 'backend',
     imageSrc: imgBackend01,
-  }
+  },
+  {
+    id: 24, 
+    title: 'Frontend',
+    type: 'frontend',
+    imageSrc: imgFrontend01,
+  },
+  {
+    id: 25, 
+    title: 'Web Design',
+    type: 'webdesign',
+    imageSrc: imgWebDesign01,
+  },
 ]

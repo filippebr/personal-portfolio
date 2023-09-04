@@ -27,6 +27,8 @@ import imgBlender19 from '../assets/blender/staff_energy.jpg'
 import imgBlender20 from '../assets/blender/the_one_ring_lotr_default_cube.jpg'
 import imgBlender21 from '../assets/blender/venus_milk_way.png'
 import imgBlender22 from '../assets/blender/wine_bottle_derek.jpg'
+import imgFrontend01 from '../assets/frontend/frontend.jpg'
+import imgWebDesign01 from '../assets/web_design/web_design.jpg'
 
 export { bgOne, bgTwo, bgThree, bgFour }
 export {
@@ -34,7 +36,7 @@ export {
   imgBlender06, imgBlender07, imgBlender08, imgBlender09, imgBlender10,
   imgBlender11, imgBlender12, imgBlender13, imgBlender14, imgBlender15,
   imgBlender16, imgBlender17, imgBlender18, imgBlender19, imgBlender20,
-  imgBlender21, imgBlender22, imgBackend01
+  imgBlender21, imgBlender22, imgBackend01, imgFrontend01, imgWebDesign01
 }
 
 

@@ -31,12 +31,15 @@ import imgFrontend01 from '../assets/frontend/frontend.jpg'
 // Web Design
 import imgWebDesign01 from '../assets/web_design/web_design.jpg'
 
+import imgFullStack01 from '../assets/fullstack/full_stack.jpg'
+
 export {
   imgBlender01, imgBlender02, imgBlender03, imgBlender04, imgBlender05,
   imgBlender06, imgBlender07, imgBlender08, imgBlender09, imgBlender10,
   imgBlender11, imgBlender12, imgBlender13, imgBlender14, imgBlender15,
   imgBlender16, imgBlender17, imgBlender18, imgBlender19, imgBlender20,
-  imgBlender21, imgBlender22, imgBackend01, imgFrontend01, imgWebDesign01
+  imgBlender21, imgBlender22, imgBackend01, imgFrontend01, imgWebDesign01,
+  imgFullStack01
 }
 
 

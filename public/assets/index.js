@@ -26,7 +26,7 @@ import imgBlender21 from '../assets/blender/venus_milk_way.png'
 import imgBlender22 from '../assets/blender/wine_bottle_derek.jpg'
 
 // Frontend
-import imgFrontend01 from '../assets/frontend/frontend.jpg'
+import imgFrontend01 from '../assets/frontend/frontend_ecommerce_devcorners.jpg'
 
 // Web Design
 import imgWebDesign01 from '../assets/web_design/web_design.jpg'

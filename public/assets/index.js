@@ -1,5 +1,5 @@
 // Backend
-import imgBackend01 from '../assets/backend/backend.jpg'
+import imgBackend01 from '../assets/backend/backend_ecommerce_devcorner.jpg'
 
 // Blender
 import imgBlender01 from '../assets/blender/abstract_image_crossmind.jpg'

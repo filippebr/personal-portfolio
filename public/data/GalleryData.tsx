@@ -150,13 +150,13 @@ export const GalleryData: ImageType[] = [
   },
   {
     id: 23, 
-    title: 'Ecommerce Developer Corners',
+    title: 'Ecommerce Backend',
     type: 'backend',
     imageSrc: imgBackend01,
   },
   {
     id: 24, 
-    title: 'Frontend',
+    title: 'Ecommerce Frontend',
     type: 'frontend',
     imageSrc: imgFrontend01,
   },

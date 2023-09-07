@@ -31,7 +31,7 @@ import imgFrontend01 from '../assets/frontend/frontend_ecommerce_devcorners.jpg'
 // Web Design
 import imgWebDesign01 from '../assets/web_design/web_design.jpg'
 
-import imgFullStack01 from '../assets/fullstack/full_stack.jpg'
+import imgFullStack01 from '../assets/fullstack/nlw_spacetime.jpg'
 
 export {
   imgBlender01, imgBlender02, imgBlender03, imgBlender04, imgBlender05,

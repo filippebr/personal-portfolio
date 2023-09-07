@@ -168,7 +168,7 @@ export const GalleryData: ImageType[] = [
   },
   {
     id: 26, 
-    title: 'Full Stack',
+    title: 'NLW Spacetime',
     type: 'fullstack',
     imageSrc: imgFullStack01,
   },

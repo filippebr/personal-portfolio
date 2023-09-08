@@ -19,8 +19,8 @@ function AboutMe() {
           <span className="font-bold text-white">
             in Web Developer and in 3D Creation{' '}
           </span>
-          I'm creating projects in Javascript for more than 6 years 
-          and creating 3D projects for more than 10 years, I love 
+          I'm creating projects in Javascript for more than 5 years 
+          and creating 3D projects for more than 4 years, I love 
           to create something new, something to inspire myself and 
           others to be better.
         </p>

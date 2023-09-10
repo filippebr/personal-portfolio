@@ -17,6 +17,10 @@ const ImageGallery: React.FC = () => {
     setFilteredImages(filtered)
   }
 
+  const getImage = (imageSrc: string) => {
+    console.warn(imageSrc)
+  }
+
   return (
     <section id="portfolio" className="w-full h-full bg-black text-white py-28">
       <h1 className="text-3xl uppercase tracking-[10px] font-semibold text-center">
@@ -40,8 +44,9 @@ const ImageGallery: React.FC = () => {
       </div>
       <div className="columns-4 lg:columns-4 md:columns-2 sm:columns-1 px-6">
         {filteredImages.map((image) => (
-          <div key={image.id} className="relative overflow-hidden group">
+          <div key={image.id} className="relative overflow-hidden group" onClick={() => getImage(image.imageSrc)}>
             <Link 
+              target='_blank'
               href={image.imageSrc}
               rel="noopener noreferrer"
             >              
@@ -52,7 +57,6 @@ const ImageGallery: React.FC = () => {
                 style={{ width: '100%', height: 'auto' }}
                 src={image.imageSrc}
                 alt={`bg${image.title}`}      
-                priority
               />
               <div className="absolute w-full h-full left-0 top-0">
                 <div className="w-full h-full relative bg-black bg-opacity-50 hidden group-hover:inline-block transition-opacity duration-500">
@@ -60,9 +64,8 @@ const ImageGallery: React.FC = () => {
                     {image.title}
                   </h1>
                 </div>
-              </div>
-          
-          </Link>
+              </div>          
+            </Link>
           </div>
         ))}        
       </div>

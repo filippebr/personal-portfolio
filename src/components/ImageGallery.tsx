@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { GalleryData, ImageType } from 'public/data/GalleryData'
 import { useState } from 'react'
 
@@ -40,22 +41,29 @@ const ImageGallery: React.FC = () => {
       <div className="columns-4 lg:columns-4 md:columns-2 sm:columns-1 px-6">
         {filteredImages.map((image) => (
           <div key={image.id} className="relative overflow-hidden group">
-          <Image
-            className="object-cover scale-125 group-hover:scale-100 duration-500"
-            width={0}
-            height={0}
-            style={{ width: '100%', height: 'auto' }}
-            src={image.imageSrc}
-            alt={`bg${image.title}`}
-          />
-          <div className="absolute w-full h-full left-0 top-0">
-            <div className="w-full h-full relative bg-black bg-opacity-50 hidden group-hover:inline-block transition-opacity duration-500">
-              <h1 className="text-xl text-center font-bold text-black bg-yellow bg-opacity-50 px-6 py-2 w-60 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-10">
-                {image.title}
-              </h1>
-            </div>
+            <Link 
+              href={image.imageSrc}
+              rel="noopener noreferrer"
+            >              
+              <Image
+                className="object-cover scale-125 group-hover:scale-100 duration-500"
+                width={500}
+                height={500}
+                style={{ width: '100%', height: 'auto' }}
+                src={image.imageSrc}
+                alt={`bg${image.title}`}      
+                priority
+              />
+              <div className="absolute w-full h-full left-0 top-0">
+                <div className="w-full h-full relative bg-black bg-opacity-50 hidden group-hover:inline-block transition-opacity duration-500">
+                  <h1 className="text-xl text-center font-bold text-black bg-yellow bg-opacity-50 px-6 py-2 w-60 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-10">
+                    {image.title}
+                  </h1>
+                </div>
+              </div>
+          
+          </Link>
           </div>
-        </div>
         ))}        
       </div>
     </section>

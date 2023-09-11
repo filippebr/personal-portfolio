@@ -1,13 +1,14 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 import { GalleryData, ImageType } from 'public/data/GalleryData'
 import { useState } from 'react'
 
 const ImageGallery: React.FC = () => {
   const [images, setImages] = useState<ImageType[]>(GalleryData)
   const [filteredImages, setFilteredImages] = useState<ImageType[]>(images)
+  const [model, setModel] = useState<boolean>(false)
+  const [tempImgSrc, setTempImgSrc] = useState<string>('')  
 
   const imageTypes = Array.from(new Set(images.map(image => image.type)));
 
@@ -18,7 +19,8 @@ const ImageGallery: React.FC = () => {
   }
 
   const getImage = (imageSrc: string) => {
-    console.warn(imageSrc)
+    setTempImgSrc(imageSrc)
+    setModel(true)
   }
 
   return (
@@ -42,14 +44,19 @@ const ImageGallery: React.FC = () => {
           Reset
         </button>
       </div>
+      <div className={model ? 'model open' : 'model'}>
+        <Image src={tempImgSrc} alt={'image'} className="flex w-full h-screen fixed justify-center items-center top-0 left-0 bg-black invisible overflow-hidden opacity-0 z-50 transition-opacity duration-400 ease transition-visibility duration-400 ease transform duration-500 ease-in-out" >
+
+        </Image>
+      </div>
       <div className="columns-4 lg:columns-4 md:columns-2 sm:columns-1 px-6">
         {filteredImages.map((image) => (
-          <div key={image.id} className="relative overflow-hidden group" onClick={() => getImage(image.imageSrc)}>
-            <Link 
+          <div key={image.id} className="relative overflow-hidden group cursor-pointer" onClick={() => getImage(image.imageSrc)}>
+            {/* <Link 
               target='_blank'
               href={image.imageSrc}
               rel="noopener noreferrer"
-            >              
+            >               */}
               <Image
                 className="object-cover scale-125 group-hover:scale-100 duration-500"
                 width={500}
@@ -65,7 +72,7 @@ const ImageGallery: React.FC = () => {
                   </h1>
                 </div>
               </div>          
-            </Link>
+            {/* </Link> */}
           </div>
         ))}        
       </div>

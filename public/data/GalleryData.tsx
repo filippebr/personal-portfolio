@@ -4,6 +4,7 @@ export interface ImageType {
   title: string
   type: string
   imageSrc: string 
+  imageLink?: string
 }
 
 export const GalleryData: ImageType[] = [
@@ -12,18 +13,21 @@ export const GalleryData: ImageType[] = [
     title: 'Ecommerce Backend',
     type: 'backend',
     imageSrc: '/images/backend/backend_ecommerce_devcorner.jpg',
+    imageLink: 'https://github.com/filippebr/ecommerce_devcorners',
   },
   {
     id: 1, 
     title: 'Ecommerce Frontend',
     type: 'frontend',
     imageSrc: '/images/frontend/frontend_ecommerce_devcorners.jpg',
+    imageLink: 'https://github.com/filippebr/ecommerce-frontend-nextjs',
   },
   {
     id: 2, 
     title: 'NLW Spacetime',
     type: 'fullstack',
     imageSrc: '/images/fullstack/nlw_spacetime.jpg',
+    imageLink: 'https://github.com/filippebr/nlw-spacetime',
   },
   {
     id: 3, 

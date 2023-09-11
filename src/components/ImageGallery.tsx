@@ -50,12 +50,12 @@ const ImageGallery: React.FC = () => {
         <Image src={tempImgSrc} alt={'image'} />
         <CloseIcon></CloseIcon>
       </div> */}
-      <div className="columns-4 lg:columns-4 md:columns-2 sm:columns-1 px-6">
+      <div className="columns-6 lg:columns-5 md:columns-2 sm:columns-1 px-6">
         {filteredImages.map((image) => (
           <div key={image.id} className="relative overflow-hidden group cursor-pointer" >
             <Link 
               target='_blank'
-              href={image.imageSrc}
+              href={image.imageLink ? image.imageLink : image.imageSrc}
               rel="noopener noreferrer"
             >              
               <Image

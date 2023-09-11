@@ -1,16 +1,16 @@
 'use client'
 
-import CloseIcon from '@mui/icons-material/Close'
 import Image from 'next/image'
+import Link from 'next/link'
 import { GalleryData, ImageType } from 'public/data/GalleryData'
+// import 'public/styles/modal.css'
 import { useState } from 'react'
-import '/styles/modal.css'
 
 const ImageGallery: React.FC = () => {
   const [images, setImages] = useState<ImageType[]>(GalleryData)
   const [filteredImages, setFilteredImages] = useState<ImageType[]>(images)
-  const [model, setModel] = useState<boolean>(false)
-  const [tempImgSrc, setTempImgSrc] = useState<string>('')  
+  // const [model, setModel] = useState<boolean>(false)
+  // const [tempImgSrc, setTempImgSrc] = useState<string>('')  
 
   const imageTypes = Array.from(new Set(images.map(image => image.type)));
 
@@ -20,10 +20,10 @@ const ImageGallery: React.FC = () => {
     setFilteredImages(filtered)
   }
 
-  const getImage = (imageSrc: string) => {
-    setTempImgSrc(imageSrc)
-    setModel(true)
-  }
+  // const getImage = (imageSrc: string) => {
+  //   setTempImgSrc(imageSrc)
+  //   setModel(true)
+  // }
 
   return (
     <section id="portfolio" className="w-full h-full bg-black text-white py-28">
@@ -46,19 +46,18 @@ const ImageGallery: React.FC = () => {
           Reset
         </button>
       </div>
-      <div className={model ? 'model open' : 'model'}>
+      {/* <div className={model ? 'model open' : 'model'}>
         <Image src={tempImgSrc} alt={'image'} />
         <CloseIcon></CloseIcon>
-
-      </div>
+      </div> */}
       <div className="columns-4 lg:columns-4 md:columns-2 sm:columns-1 px-6">
         {filteredImages.map((image) => (
-          <div key={image.id} className="relative overflow-hidden group cursor-pointer" onClick={() => getImage(image.imageSrc)}>
-            {/* <Link 
+          <div key={image.id} className="relative overflow-hidden group cursor-pointer" >
+            <Link 
               target='_blank'
               href={image.imageSrc}
               rel="noopener noreferrer"
-            >               */}
+            >              
               <Image
                 className="object-cover scale-125 group-hover:scale-100 duration-500"
                 width={500}
@@ -74,7 +73,7 @@ const ImageGallery: React.FC = () => {
                   </h1>
                 </div>
               </div>          
-            {/* </Link> */}
+            </Link>
           </div>
         ))}        
       </div>

@@ -1,8 +1,10 @@
 'use client'
 
+import CloseIcon from '@mui/icons-material/Close'
 import Image from 'next/image'
 import { GalleryData, ImageType } from 'public/data/GalleryData'
 import { useState } from 'react'
+import '/styles/modal.css'
 
 const ImageGallery: React.FC = () => {
   const [images, setImages] = useState<ImageType[]>(GalleryData)
@@ -45,9 +47,9 @@ const ImageGallery: React.FC = () => {
         </button>
       </div>
       <div className={model ? 'model open' : 'model'}>
-        <Image src={tempImgSrc} alt={'image'} className="flex w-full h-screen fixed justify-center items-center top-0 left-0 bg-black invisible overflow-hidden opacity-0 z-50 transition-opacity duration-400 ease transition-visibility duration-400 ease transform duration-500 ease-in-out" >
+        <Image src={tempImgSrc} alt={'image'} />
+        <CloseIcon></CloseIcon>
 
-        </Image>
       </div>
       <div className="columns-4 lg:columns-4 md:columns-2 sm:columns-1 px-6">
         {filteredImages.map((image) => (

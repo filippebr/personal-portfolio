@@ -1,4 +1,5 @@
 import { MouseEventHandler } from "react"
+import { sendEmail } from "./sendEmail"
 
 type FormContactProps = {
   setUsername: (username: string) => void
@@ -16,7 +17,13 @@ function FormContact({
   handleSubmit 
 }: FormContactProps): JSX.Element {
   return (
-    <form className="w-full flex flex-col items-center gap-4 md:gap-10">
+    <form 
+      className="w-full flex flex-col items-center gap-4 md:gap-10"
+      onSubmit={async (e) => {
+        e.preventDefault(); // Prevent the default form submission behavior
+        await sendEmail(username, email, message); // Assuming sendEmail is a function that takes an object with these properties
+      }}
+    >
       <div className="w-full flex flex-col md:flex-row items-center gap-4 md:gap-10">
         <input
           onChange={(e) => setUsername(e.target.value)}

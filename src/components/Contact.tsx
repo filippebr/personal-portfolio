@@ -11,7 +11,7 @@ function Contact() {
   const [errMsg, setErrMsg] = useState('')
   const [successMsg, setSuccessMsg] = useState('')
 
-  const handleSubmit = (e: FormEvent<HTMLButtonElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLButtonElement>) => {
     e.preventDefault();    
   
     if (!username) {
@@ -28,6 +28,13 @@ function Contact() {
       setErrMsg('Please enter your message.');
       return;
     }
+
+    await fetch('/api/email', {
+      method: 'POST',
+      body: JSON.stringify({
+        firstName: 'Filippe'
+      })
+    })
   
     const successMessage = `Hello dear ${username}, thank you for your message. Additional information will be sent to you shortly via your email at ${email}.`;
     setSuccessMsg(successMessage);

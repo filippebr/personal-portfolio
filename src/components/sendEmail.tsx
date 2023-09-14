@@ -7,6 +7,8 @@ const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(req: NextRequest) {
 
+  // const data = req.body
+
   try {
     await resend.emails.send({
       from: 'onboarding@resend.dev',
@@ -16,15 +18,12 @@ export async function POST(req: NextRequest) {
       react: Welcome(),
     })
     return NextResponse.json({
-      data,
+      // data,
       status: 'Ok'
     })
   } catch(error) {
     console.log(error)
     return NextResponse.json({ error })
   }
-
-  
-
   
 }

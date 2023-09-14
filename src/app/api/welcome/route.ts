@@ -12,7 +12,7 @@ export async function GET(req: NextRequest) {
   try {
     await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'webdevfibr@protonmail.com',
+      to: 'filippeffx@hotmail.com',
       subject: 'Thanks for reaching out 🤝',
       text: 'Hello World!',
       react: Welcome(),

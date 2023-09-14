@@ -31,9 +31,7 @@ function Contact() {
 
     await fetch('/api/email', {
       method: 'POST',
-      body: JSON.stringify({
-        firstName: 'Filippe'
-      })
+      body: JSON.stringify()
     })
   
     const successMessage = `Hello dear ${username}, thank you for your message. Additional information will be sent to you shortly via your email at ${email}.`;

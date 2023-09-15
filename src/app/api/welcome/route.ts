@@ -10,7 +10,7 @@ export async function GET(req: NextRequest) {
   // const data = req.body
 
   try {
-    await resend.emails.send({
+    const data = await resend.emails.send({
       from: 'onboarding@resend.dev',
       to: 'filippeffx@hotmail.com',
       subject: 'Thanks for reaching out 🤝',
@@ -18,7 +18,7 @@ export async function GET(req: NextRequest) {
       react: Welcome(),
     })
     return NextResponse.json({
-      // data,
+      data,
       status: 'Ok'
     })
   } catch(error) {

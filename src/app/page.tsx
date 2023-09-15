@@ -1,6 +1,6 @@
 // import AboutMe from '@/components/AboutMe'
 import Contact from '@/components/Contact'
-import Works from '@/components/ImageGallery'
+// import Works from '@/components/ImageGallery'
 import Offers from '@/components/Offers'
 import ScrollBtn from '@/components/ScrollBtn'
 // import Testimonial from '@/components/Testimonial'
@@ -13,7 +13,7 @@ const Home = () => {
         {/* <Banner /> */}
         {/* <AboutMe /> */}
         <Offers />
-        <Works />
+        {/* <Works /> */}
         {/* <Testimonial /> */}
         <Contact />
       </div>

@@ -29,7 +29,7 @@ function Contact() {
       return;
     }
 
-    await fetch('/api/email', {
+    await fetch('/api/welcome', {
       method: 'POST',
       // body: JSON.stringify(data)
     })

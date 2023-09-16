@@ -10,8 +10,8 @@ module.exports = {
         bodyFont: "Nunito Sans",
       },
       backgroundImage: {
-        "hero-image": "url('/assets/bg.jpg')",
-        "contact-image": "url('/assets/contact.jpg')"
+        "hero-image": "url('/images/bg.jpg')",
+        "contact-image": "url('/images/contact.jpg')"
       },
       colors: {
         grayLight: "#CFCFCF",

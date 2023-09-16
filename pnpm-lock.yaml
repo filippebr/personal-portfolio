@@ -27,8 +27,8 @@ dependencies:
     specifier: 13.2.1
     version: 13.2.1(eslint@8.34.0)(typescript@4.9.5)
   framer-motion:
-    specifier: ^10.0.2
-    version: 10.0.2(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^10.16.4
+    version: 10.16.4(react-dom@18.2.0)(react@18.2.0)
   next:
     specifier: 13.2.1
     version: 13.2.1(react-dom@18.2.0)(react@18.2.0)
@@ -2016,11 +2016,16 @@ packages:
     resolution: {integrity: sha512-/KxoyCnPM0GwYI4NN0Iag38Tqt+od3/mLuguepLgCAKPn0ZhC544nssAW0tG2/00zXEYl9W+7hwAIpLHo6Oc7Q==}
     dev: true
 
-  /framer-motion@10.0.2(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-1k8y1e6DMRQ/r6or4TBxRhE1cXlDE5bm+SFeWLeh7ng0sfSbpROC2Qd1OEHq6lLXNARar/KKoj/EQ6eIvn60Uw==}
+  /framer-motion@10.16.4(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-p9V9nGomS3m6/CALXqv6nFGMuFOxbWsmaOrdmhyQimMIlLl3LC7h7l86wge/Js/8cRu5ktutS/zlzgR7eBOtFA==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)

@@ -1,6 +1,12 @@
 import { Button } from '@react-email/button'
 import { Html } from '@react-email/html'
 
+type Data = {
+  username: string,
+  email: string,
+  message: string
+}
+
 export default function Email() {
   return (
     <Html>
@@ -12,6 +18,9 @@ export default function Email() {
       >
         Click me
       </Button>
+      {/* <h1>{email}</h1>
+      <p>{message}</p>
+      <p>Thanks to reach me {username}, I will answer your message soon</p> */}
     </Html>
   );
 }

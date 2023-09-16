@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+
 import ContactData from 'public/data/ContactData'
 import { FormEvent, useState } from 'react'
 import FormContact from './formContact'
@@ -15,31 +16,32 @@ function Contact() {
     e.preventDefault();    
   
     if (!username) {
-      setErrMsg('Please enter your name.');
-      return;
+      setErrMsg('Please enter your name.')
+      return
     }
   
     if (!email) {
-      setErrMsg('Please enter your email.');
-      return;
+      setErrMsg('Please enter your email.')
+      return
     }
   
     if (!message) {
-      setErrMsg('Please enter your message.');
-      return;
+      setErrMsg('Please enter your message.')
+      return
     }
 
-    try {
-      const response = await fetch('/api/welcome');
-      const data = await response.json();
-      console.log(data);
-    } catch (error) {
-      console.error(error);
-    }
+    // try {
+    //   const response = await fetch('/api/welcome')
+    //   const data = await response.json()
+    //   console.log('data', data)
+    // } catch (error) {
+    //   console.error('error', error)
+    // }
   
     const successMessage = `Hello dear ${username}, thank you for your message. Additional information will be sent to you shortly via your email at ${email}.`;
     setSuccessMsg(successMessage);
-  };
+  }
+  
   return (
     <section
       id="contact"

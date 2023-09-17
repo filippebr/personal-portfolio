@@ -1,13 +1,13 @@
 import { Button } from '@react-email/button'
 import { Html } from '@react-email/html'
 
-type Data = {
+type WelcomeEmailProps = {
   username: string,
   email: string,
   message: string
 }
 
-export default function Email() {
+export default function Email( {username}: WelcomeEmailProps) {
   return (
     <Html>
       <Button
@@ -18,6 +18,7 @@ export default function Email() {
       >
         Click me
       </Button>
+      {username}
       {/* <h1>{email}</h1>
       <p>{message}</p>
       <p>Thanks to reach me {username}, I will answer your message soon</p> */}

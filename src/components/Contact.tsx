@@ -30,13 +30,18 @@ function Contact() {
       return
     }
 
-    // try {
-    //   const response = await fetch('/api/welcome')
-    //   const data = await response.json()
-    //   console.log('data', data)
-    // } catch (error) {
-    //   console.error('error', error)
-    // }
+    try {
+      const response = await fetch('/api/welcome', {
+        method: 'POST',
+        body: JSON.stringify({
+          username: username
+        })
+      })
+      const data = await response.json()
+      console.log('data', data)
+    } catch (error) {
+      console.error('error', error)
+    }
   
     const successMessage = `Hello dear ${username}, thank you for your message. Additional information will be sent to you shortly via your email at ${email}.`;
     setSuccessMsg(successMessage);

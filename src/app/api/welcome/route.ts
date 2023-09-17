@@ -11,9 +11,9 @@ type Credentials = {
   message: string
 }
 
-export async function GET({username, email, message}: Credentials, req: NextRequest) {
+export async function GET(req: NextRequest) {
 
-  console.log('body', req.body)
+  const { username } = await req.json()
 
   try {
     const data = await resend.emails.send({
@@ -21,7 +21,7 @@ export async function GET({username, email, message}: Credentials, req: NextRequ
       to: 'filippeffx@hotmail.com',
       subject: 'Thanks for reaching out 🤝',
       text: 'Hello World!',
-      react: Email(),
+      react: Email( username ),
     })
     return NextResponse.json({
       data,

@@ -3,11 +3,9 @@ import { Html } from '@react-email/html'
 
 type WelcomeEmailProps = {
   username: string,
-  email: string,
-  message: string
 }
 
-export default function Email( {username}: WelcomeEmailProps) {
+export default function Email( { username }: WelcomeEmailProps) {
   return (
     <Html>
       <Button

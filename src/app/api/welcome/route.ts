@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
 import Email from '../../../emails/Welcome'
@@ -11,7 +11,7 @@ type Credentials = {
   message: string
 }
 
-export async function GET(req: NextRequest) {
+export async function POST(req: Request) {
 
   const { username } = await req.json()
 
@@ -21,7 +21,7 @@ export async function GET(req: NextRequest) {
       to: 'filippeffx@hotmail.com',
       subject: 'Thanks for reaching out 🤝',
       text: 'Hello World!',
-      react: Email( username ),
+      react: Email({ username }),
     })
     return NextResponse.json({
       data,

@@ -37,8 +37,8 @@ function Contact() {
           username: username
         })
       })
-      const data = await response.json()
-      console.log('data', data)
+      // const data = await response.json()
+      // console.log('data', data)
     } catch (error) {
       console.error('error', error)
     }

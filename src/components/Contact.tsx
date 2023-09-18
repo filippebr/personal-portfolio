@@ -34,7 +34,9 @@ function Contact() {
       const response = await fetch('/api/welcome', {
         method: 'POST',
         body: JSON.stringify({
-          username: username
+          username,
+          email,
+          message
         })
       })
       // const data = await response.json()

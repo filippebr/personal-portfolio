@@ -5,23 +5,17 @@ import Email from '../../../emails/Welcome'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
-type Credentials = {
-  username: string,
-  email: string,
-  message: string
-}
-
 export async function POST(req: Request) {
 
-  const { username } = await req.json()
+  const { username, email, message } = await req.json()
 
   try {
     const data = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'filippeffx@hotmail.com',
+      to: email,
       subject: 'Thanks for reaching out 🤝',
       text: 'Hello World!',
-      react: Email({ username }),
+      react: Email({ username, email, message }),
     })
     return NextResponse.json({
       data,

@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { GalleryData, ImageType } from 'public/data/GalleryData'
-// import 'public/styles/modal.css'
 import { useState } from 'react'
 
 const ImageGallery: React.FC = () => {

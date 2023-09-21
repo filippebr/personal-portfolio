@@ -31,6 +31,7 @@ import imgFrontend01 from '/images/frontend/frontend_ecommerce_devcorners.jpg'
 // Web Design
 import imgWebDesign01 from '/images/web_design/web_design.jpg'
 
+// FullStack
 import imgFullStack01 from '/images/fullstack/nlw_spacetime.jpg'
 
 export {

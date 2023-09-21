@@ -9,8 +9,6 @@ import { useState } from 'react'
 const ImageGallery: React.FC = () => {
   const [images, setImages] = useState<ImageType[]>(GalleryData)
   const [filteredImages, setFilteredImages] = useState<ImageType[]>(images)
-  // const [model, setModel] = useState<boolean>(false)
-  // const [tempImgSrc, setTempImgSrc] = useState<string>('')  
 
   const imageTypes = Array.from(new Set(images.map(image => image.type)));
 
@@ -19,11 +17,6 @@ const ImageGallery: React.FC = () => {
     const filtered = images.filter(image => image.type === filterType)
     setFilteredImages(filtered)
   }
-
-  // const getImage = (imageSrc: string) => {
-  //   setTempImgSrc(imageSrc)
-  //   setModel(true)
-  // }
 
   return (
     <section id="portfolio" className="w-full h-full bg-black text-white py-28">
@@ -46,10 +39,6 @@ const ImageGallery: React.FC = () => {
           Reset
         </button>
       </div>
-      {/* <div className={model ? 'model open' : 'model'}>
-        <Image src={tempImgSrc} alt={'image'} />
-        <CloseIcon></CloseIcon>
-      </div> */}
       <div className="columns-6 lg:columns-5 md:columns-2 sm:columns-1 px-6">
         {filteredImages.map((image) => (
           <div key={image.id} className="relative overflow-hidden group cursor-pointer" >

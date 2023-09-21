@@ -31,7 +31,7 @@ function Contact() {
     }
 
     try {
-      const response = await fetch('/api/welcome', {
+      await fetch('/api/welcome', {
         method: 'POST',
         body: JSON.stringify({
           username,
@@ -39,8 +39,6 @@ function Contact() {
           message
         })
       })
-      // const data = await response.json()
-      // console.log('data', data)
     } catch (error) {
       console.error('error', error)
     }

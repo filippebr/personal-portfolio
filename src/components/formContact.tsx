@@ -6,6 +6,7 @@ type FormContactProps = {
   setMessage: (message: string) => void
   errMsg: string
   handleSubmit: (MouseEventHandler<HTMLButtonElement>)
+  setIsLoading: boolean
 }
 
 function FormContact({ 
@@ -13,8 +14,10 @@ function FormContact({
   setEmail, 
   setMessage, 
   errMsg, 
-  handleSubmit 
+  handleSubmit,
+  setIsLoading
 }: FormContactProps): JSX.Element {
+  
   return (
     <form 
       className="w-full flex flex-col items-center gap-4 md:gap-10"
@@ -47,6 +50,7 @@ function FormContact({
       <button
         onClick={handleSubmit}
         className="w-44 h-12 text-black bg-yellow text-base uppercase font-bold tracking-wide border-2 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300"
+        disabled={setIsLoading}
       >
         Submit Now
       </button>

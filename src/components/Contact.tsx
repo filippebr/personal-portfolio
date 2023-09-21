@@ -11,9 +11,11 @@ function Contact() {
   const [message, setMessage] = useState('')
   const [errMsg, setErrMsg] = useState('')
   const [successMsg, setSuccessMsg] = useState('')
+  const [isLoading, setIsLoading] = useState<boolean>(false)
 
   const handleSubmit = async (e: FormEvent<HTMLButtonElement>) => {
-    e.preventDefault();    
+    e.preventDefault()    
+    setIsLoading(true)
   
     if (!username) {
       setErrMsg('Please enter your name.')
@@ -41,6 +43,8 @@ function Contact() {
       })
     } catch (error) {
       console.error('error', error)
+    } finally {
+      setIsLoading(false)
     }
   
     const successMessage = `Hello dear ${username}, thank you for your message. Additional information will be sent to you shortly via your email at ${email}.`;
@@ -82,6 +86,7 @@ function Contact() {
               setMessage={setMessage} 
               errMsg={errMsg} 
               handleSubmit={handleSubmit} 
+              setIsLoading={isLoading}
             />            
           )}
           <div className="w-full py-10 bg-black bg-opacity-40 flex flex-col md:flex-row px-4 md:items-center justify-between">

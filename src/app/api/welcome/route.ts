@@ -14,7 +14,6 @@ export async function POST(req: Request) {
       from: 'onboarding@resend.dev',
       to: 'webdevfibr@protonmail.com',
       subject: 'Thanks for reaching out 🤝',
-      text: 'Hello World!',
       react: Email({ username, email, message }),
     })
     return NextResponse.json({

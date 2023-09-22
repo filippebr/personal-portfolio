@@ -77,7 +77,7 @@ function Banner() {
               <div>
                 <ul className="flex flex-col gap-2">
                   <ScrollLink to="home">Home</ScrollLink>
-                  {/* <ScrollLink to="about">About</ScrollLink> */}
+                  <ScrollLink to="about">About</ScrollLink>
                   <ScrollLink to="portfolio">Portfolio</ScrollLink>
                   {/* <ScrollLink to="testimonial">Testimonial</ScrollLink> */}
                   <ScrollLink to="contact">Contact</ScrollLink>

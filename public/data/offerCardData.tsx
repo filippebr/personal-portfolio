@@ -31,7 +31,6 @@ const OfferCardData = [
     subtitle: 'Stunning and very realistic images utilizing the greatest tool in generative artificial intelligence',
     icon: FaRobot,
   },
-  // Add more cards here
 ];
 
 export default OfferCardData

@@ -20,7 +20,7 @@ function Design() {
   return (
     <div
       id="tsparticles-custom"
-      className="w-full h-full bg-hero-image bg-cover"
+      className="w-full h-full absolute inset-0 bg-hero-image bg-cover"
     >
       <Particles
         style={{

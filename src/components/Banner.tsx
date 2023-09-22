@@ -31,9 +31,9 @@ function Banner() {
   }, [])
 
   return (
-    <section id="home" className="w-full h-screen relative text-white">
+    <section id="home" className="w-full h-[800px] relative text-white">
       <Design />
-      <div className="absolute left-0 top-0 w-full h-screen bg-black bg-opacity-10 ">
+      <div className="absolute left-0 top-0 w-full h-[800px] bg-black bg-opacity-10 ">
         <nav
           style={{
             backgroundColor: navColor,

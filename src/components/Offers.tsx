@@ -1,4 +1,4 @@
-import offerCardData from '../../public/data/OfferCardData'
+import offerCardData from '../app/data/OfferCardData'
 import OfferCard from './OfferCard'
 
 function Offers() {

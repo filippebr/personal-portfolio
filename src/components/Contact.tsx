@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 
-import ContactData from 'public/data/ContactData'
+import ContactData from '@/app/data/ContactData'
 import { FormEvent, useState } from 'react'
 import FormContact from './formContact'
 

@@ -1,8 +1,8 @@
 'use client'
 
+import { GalleryData, ImageType } from '@/app/data/GalleryData'
 import Image from 'next/image'
 import Link from 'next/link'
-import { GalleryData, ImageType } from 'public/data/GalleryData'
 import { useState } from 'react'
 
 const ImageGallery: React.FC = () => {

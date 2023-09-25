@@ -23,7 +23,7 @@ function AboutMe() {
           for more than 4 years. I have a passion for crafting new and inspiring creations 
           that motivate both myself and others to excel.
         </p>
-        <div className="w-[700px] grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8">
           <AboutList title="Web Design" />
           <AboutList title="HTML" />
           <AboutList title="CSS" />

@@ -9,7 +9,8 @@ module.exports = {
         bodyFont: "Nunito Sans",
       },
       backgroundImage: {
-        "hero-image": "url('/images/bg.jpg')",
+        "hero-image-mobile": "url('/images/hero_image_mobile.jpg')",
+        "hero-image": "url('/images/hero_image.jpg')",
         "contact-image": "url('/images/contact.jpg')"
       },
       colors: {

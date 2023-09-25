@@ -12,7 +12,7 @@ function Design() {
 
   const particlesLoaded = useCallback(
     async (container: Container | undefined) => {
-      await console.log(container)
+      console.log(container)
     },
     [],
   )
@@ -20,7 +20,7 @@ function Design() {
   return (
     <div
       id="tsparticles-custom"
-      className="w-full h-full absolute inset-0 bg-hero-image bg-cover"
+      className="w-full h-full absolute inset-0 bg-hero-image-mobile md:bg-hero-image bg-cover"
     >
       <Particles
         style={{

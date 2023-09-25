@@ -7,7 +7,7 @@ import ScrollLink from './ScrollLink'
 
 function Banner() {
   const ref = useRef<HTMLDivElement | null>(null)
-  const [navColor, setnavColor] = useState<string>('transparent')
+  const [navColor, setNavColor] = useState<string>('transparent')
   const [menu, setMenu] = useState<boolean>(false)
 
   function handleClick(event: MouseEvent<HTMLDivElement>): void {
@@ -20,7 +20,7 @@ function Banner() {
   }
 
   const listenedScrollEvent = () => {
-    window.scrollY > 10 ? setnavColor('#000') : setnavColor('transparent')
+    window.scrollY > 10 ? setNavColor('#000') : setNavColor('transparent')
   }
 
   useEffect(() => {

@@ -94,7 +94,7 @@ function Contact() {
               <p>For project enquires</p>
               <p>
                 or say Hello -{' '}
-                <span className="font-semibold text-yellow">
+                <span className="font-semibold text-yellow text-xs md:text-base">
                   webdevfibr@protonmail.com
                 </span>
               </p>

@@ -57,12 +57,12 @@ function Banner() {
           <h1 className="text-[50px] md:text-[80px] lg:text-[100px] font-black text-grayLight">
             Filippe Braga
           </h1>
-          <div className="flex items-center gap-2 md:gap-6 text-base md:text-xl font-bold bg-yellow px-6 py-3 uppercase">
-            <h2 className="tracking-[4px] text-black">Programmer</h2>
-            <HiMinus className="text-2xl rotate-90 text-black" />
-            <h2 className="tracking-[4px] text-black">Designer</h2>
-            <HiMinus className="text-2xl rotate-90 text-black" />
-            <h2 className="tracking-[4px] text-black">3D Creator</h2>
+          <div className="flex items-center gap-0 md:px-6 md:gap-6 text-sm md:text-xl font-bold bg-yellow px-2 py-1 md:py-3 uppercase">
+            <h2 className="tracking-[1px] md:tracking-[4px] text-black">Programmer</h2>
+            <HiMinus className="text-lg md:text-2xl rotate-90 text-black" />
+            <h2 className="tracking-[1px] md:tracking-[4px] text-black">Designer</h2>
+            <HiMinus className="text-lg md:text-2xl rotate-90 text-black" />
+            <h2 className="tracking-[1px] md:tracking-[4px] text-black">3D Creator</h2>
           </div>
         </div>
       </div>

@@ -54,10 +54,10 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="w-full h-[900px] md:h-[800px]  bg-contact-image bg-no-repeat bg-cover bg-fixed text-white px-0 relative"
+      className="w-full h-[900px] md:h-[800px] bg-contact-image bg-no-repeat bg-cover bg-fixed text-white px-0 relative"
     >
-      <div className="w-full h-full overflow-hidden bg-black bg-opacity-90 px-5 py-20">
-        <div className="max-w-6xl h-full mx-auto flex flex-col gap-6 md:gap-12">
+      <div className="w-full h-full overflow-hidden bg-black bg-opacity-90 px-20 py-20">
+        <div className="w-full h-full mx-auto flex flex-col gap-6 md:gap-12">
           <h1 className="text-3xl font-thin tracking-widest uppercase text-center">
             Say Hello!
           </h1>

@@ -26,7 +26,7 @@ const ImageGallery: React.FC = () => {
         {imageTypes.map(type => (
           <button
             key={type}
-            className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300"
+            className="text-center py-4 font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300"
             onClick={() => filterImagesByType(type)}
           >
             {type.charAt(0).toUpperCase() + type.slice(1)}

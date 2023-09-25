@@ -22,17 +22,17 @@ const ImageGallery: React.FC = () => {
       <h1 className="text-3xl uppercase tracking-[10px] font-semibold text-center">
         Works
       </h1>
-      <div className="grid grid-cols-6 text-base font-bold mt-16 mx-6">
+      <div className="grid grid-cols-3 md:grid-cols-6 text-sm md:text-base font-bold mt-8 md:mt-16 mx-6">
         {imageTypes.map(type => (
           <button
             key={type}
-            className="text-center py-4 font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300"
+            className="text-center py-1 md:py-4 font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300"
             onClick={() => filterImagesByType(type)}
           >
             {type.charAt(0).toUpperCase() + type.slice(1)}
           </button>
         ))}
-        <button className="text-center py-4 text-2xl font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300" 
+        <button className="text-center py-1 md:py-4 font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300" 
           onClick={() => setFilteredImages(images)}
         >
           Reset

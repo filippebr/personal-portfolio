@@ -48,8 +48,8 @@ const ImageGallery: React.FC = () => {
             >              
               <Image
                 className="object-cover scale-125 group-hover:scale-100 duration-500"
-                width={500}
-                height={500}
+                width={300}
+                height={300}
                 style={{ width: '100%', height: 'auto' }}
                 src={image.imageSrc}
                 alt={`bg${image.title}`}      

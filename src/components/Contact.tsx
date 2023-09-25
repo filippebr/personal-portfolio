@@ -75,7 +75,7 @@ function Contact() {
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, type: 'easeIn' }}
-              className="max-w-[600px] h-full flex justify-center items-center mx-auto text-lg font-semibold px-4"
+              className="max-w-[600px] h-full flex justify-center items-center mx-auto text-xs md:text-lg font-semibold px-4"
             >
               {successMsg}
             </motion.p>
@@ -90,11 +90,11 @@ function Contact() {
             />            
           )}
           <div className="w-full py-10 bg-black bg-opacity-40 flex flex-col md:flex-row px-4 md:items-center justify-between">
-            <div className="text-lg font-thin">
+            <div className="text-xs md:text-lg font-thin">
               <p>For project enquires</p>
               <p>
                 or say Hello -{' '}
-                <span className="font-semibold text-yellow text-xs md:text-base">
+                <span className="font-semibold text-yellow">
                   webdevfibr@protonmail.com
                 </span>
               </p>

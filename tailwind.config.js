@@ -11,7 +11,8 @@ module.exports = {
       backgroundImage: {
         "hero-image-mobile": "url('/images/hero_image_mobile.jpg')",
         "hero-image": "url('/images/hero_image.jpg')",
-        "contact-image": "url('/images/contact.jpg')"
+        "contact-image-mobile": "url('/images/contact_image_mobile.jpg')",
+        "contact-image": "url('/images/contact_image.jpg')"
       },
       colors: {
         grayLight: "#CFCFCF",

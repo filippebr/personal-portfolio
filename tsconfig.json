@@ -23,7 +23,9 @@
     "paths": {
       "@/*": ["./src/*"],
       "@public/*": ["./public/*"],
-      "@data/*": ["./src/app/data/*"]
+      "@components/*": ["./src/components/*"],
+      "@data/*": ["./src/app/data/*"],
+      "@emails/*": ["./src/emails/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

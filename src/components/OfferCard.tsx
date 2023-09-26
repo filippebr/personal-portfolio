@@ -1,4 +1,3 @@
-
 type Props = {
   Icon: React.ElementType
   title: string

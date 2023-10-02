@@ -35,7 +35,7 @@ const ImageGallery: React.FC = () => {
         <button className="text-center py-1 md:py-4 font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300" 
           onClick={() => setFilteredImages(images)}
         >
-          Reset
+          All
         </button>
       </div>
       <div className="columns-1 lg:columns-5 md:columns-2 px-6">

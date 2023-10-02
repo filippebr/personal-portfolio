@@ -22,7 +22,7 @@ const ImageGallery: React.FC = () => {
       <h1 className="text-3xl uppercase tracking-[10px] font-semibold text-center">
         Works
       </h1>
-      <div className="grid grid-cols-3 md:grid-cols-6 text-sm md:text-base font-bold mt-8 md:mt-16 mx-6">
+      <div className="grid grid-cols-4 md:grid-cols-8 text-sm md:text-base font-bold mt-8 md:mt-16 mx-6">
         {imageTypes.map(type => (
           <button
             key={type}

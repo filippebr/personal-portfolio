@@ -32,7 +32,8 @@ const ImageGallery: React.FC = () => {
             {type.charAt(0).toUpperCase() + type.slice(1)}
           </button>
         ))}
-        <button className="text-center py-1 md:py-4 font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300" 
+        <button
+          className="text-center py-1 md:py-4 font-bold bg-yellow text-black uppercase border-4 border-transparent hover:bg-black hover:text-white hover:border-yellow duration-300 flex-grow"
           onClick={() => setFilteredImages(images)}
         >
           All

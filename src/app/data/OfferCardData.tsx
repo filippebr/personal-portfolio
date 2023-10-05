@@ -9,13 +9,13 @@ const OfferCardData = [
   },
   {
     id: 2,
-    title: 'Backend',
+    title: 'Back-end',
     subtitle: 'Databases with the best technologies at the moment',
     icon: FaServer
   },
   {
     id: 3,
-    title: 'Frontend',
+    title: 'Front-end',
     subtitle: 'Coding utilizing apis from database and thirds parties with nice syntax and splitting codes',
     icon: FaCode,
   },
